@@ -5,6 +5,7 @@ ${URL}    http://qa-smartflow.benchachinda.co.th/accounts/login
 ${OTP}    9
 ${CREATOR}    ประภวิษณุ์ บำเพ็ญสิน
 ${APPROVER}    ฐาปกรณ์ หาญรักษ์
+${APPROVER2PPL}    ดารินทร์ พงศ์สุพัฒน์, ฐาปกรณ์ หาญรักษ์
 ${BU}    BNG
 ${DOCTYPE}    อื่นๆ
 ${FOR_TOKNOW}    เพื่อทราบ
@@ -88,6 +89,21 @@ Fill The Infomation
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     Click Button    xpath=//button[normalize-space()='Next']
 
+Fill The Infomation With 2 Final Approver
+    [arguments]    ${subject}    ${randomref}    ${approver}    ${approver2}    ${expdate}
+    Wait Until Element Is Visible    xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]        30s
+    Input Text    xpath=//input[@placeholder='Subject']    ${subject}
+    Input Text    xpath=//input[@placeholder='Document Refer']    ${randomref}
+    Click Element    xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[1]/button[1]
+    Wait Until Element Is Visible    xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[2]
+    Input Text    xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]   ${approver}
+    Press Keys    xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]   ENTER
+    Input Text    xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]   ${approver2}
+    Press Keys    xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]   ENTER
+    Input Text    xpath=//input[@formcontrolname='expire_date']    ${expdate}
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Click Button    xpath=//button[normalize-space()='Next']
+
 Assert First Verification Without Via
     Wait Until Element Is Visible    xpath=//p[normalize-space()='Subject :']    30s
     Page Should Contain Element    xpath=//p[normalize-space()='Subject :']
@@ -98,6 +114,29 @@ Assert First Verification Without Via
     Page Should Contain Element    xpath=//p[normalize-space()='${date}']
     Page Should Contain Element    xpath=//p[normalize-space()='To :']
     Page Should Contain Element    xpath=//p[contains(text(),'${APPROVER}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='Doc No. :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${BU}']
+    Page Should Contain Element    xpath=//p[normalize-space()='VIA :']
+    Page Should Contain Element    xpath=//p[normalize-space()='-']
+    Page Should Contain Element    xpath=//p[normalize-space()='For :']
+    Page Should Contain Element    xpath=//p[contains(text(),'${FOR_TOKNOW}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='Doc Refer. :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${ref}']
+    Page Should Contain Element    xpath=//h6[normalize-space()='LOA']
+    Page Should Contain Element    xpath=//p[contains(text(),'${DOCTYPE}')]
+    Page Should Contain Element    xpath=//h6[normalize-space()='Due date']
+    Page Should Contain Element    xpath=//p[normalize-space()='${expdate} 11:59 PM']
+
+Assert First Verification With 2 Approvers But Without Via
+    Wait Until Element Is Visible    xpath=//p[normalize-space()='Subject :']    30s
+    Page Should Contain Element    xpath=//p[normalize-space()='Subject :']
+    Page Should Contain Element    xpath=//p[contains(text(),'Subject2A-${currentdate}-${ref}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='From :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${CREATOR}']
+    Page Should Contain Element    xpath=//p[normalize-space()='Date :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${date}']
+    Page Should Contain Element    xpath=//p[normalize-space()='To :']
+    Page Should Contain Element    xpath=//p[(text()='${APPROVER2PPL}')]
     Page Should Contain Element    xpath=//p[normalize-space()='Doc No. :']
     Page Should Contain Element    xpath=//p[normalize-space()='${BU}']
     Page Should Contain Element    xpath=//p[normalize-space()='VIA :']
@@ -134,6 +173,29 @@ Assert Draft Verification Without Via
     Page Should Contain Element    xpath=//h6[normalize-space()='Due date']
     Page Should Contain Element    xpath=//p[normalize-space()='${expdate} 11:59 PM']
 
+Assert Draft Verification With 2 Approvers But Without Via
+    Wait Until Element Is Visible    xpath=//p[normalize-space()='Subject :']    30s
+    Page Should Contain Element    xpath=//p[normalize-space()='Subject :']
+    Page Should Contain Element    xpath=//p[contains(text(),'Subject2A-${currentdate}-${ref}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='From :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${CREATOR}']
+    Page Should Contain Element    xpath=//p[normalize-space()='Date :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${date}']
+    Page Should Contain Element    xpath=//p[normalize-space()='To :']
+    Page Should Contain Element    xpath=//p[contains(text(),'${APPROVER2PPL}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='Doc No. :']
+    Page Should Contain Element    xpath=//p[contains(text(),'DRF')]
+    Page Should Contain Element    xpath=//p[normalize-space()='VIA :']
+    Page Should Contain Element    xpath=//p[normalize-space()='-']
+    Page Should Contain Element    xpath=//p[normalize-space()='For :']
+    Page Should Contain Element    xpath=//p[contains(text(),'${FOR_TOKNOW}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='Doc Refer. :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${ref}']
+    Page Should Contain Element    xpath=//h6[normalize-space()='LOA']
+    Page Should Contain Element    xpath=//p[contains(text(),'${DOCTYPE}')]
+    Page Should Contain Element    xpath=//h6[normalize-space()='Due date']
+    Page Should Contain Element    xpath=//p[normalize-space()='${expdate} 11:59 PM']
+
 Assert Edit Draft Verification Without Via
     Wait Until Element Is Visible    xpath=//p[normalize-space()='Subject :']    30s
     Page Should Contain Element    xpath=//p[normalize-space()='Subject :']
@@ -144,6 +206,29 @@ Assert Edit Draft Verification Without Via
     Page Should Contain Element    xpath=//p[normalize-space()='${date}']
     Page Should Contain Element    xpath=//p[normalize-space()='To :']
     Page Should Contain Element    xpath=//p[contains(text(),'${APPROVER}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='Doc No. :']
+    Page Should Contain Element    xpath=//p[contains(text(),'DRF')]
+    Page Should Contain Element    xpath=//p[normalize-space()='VIA :']
+    Page Should Contain Element    xpath=//p[normalize-space()='-']
+    Page Should Contain Element    xpath=//p[normalize-space()='For :']
+    Page Should Contain Element    xpath=//p[contains(text(),'${FOR_TOCONSIDER}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='Doc Refer. :']
+    Page Should Contain Element    xpath=//p[normalize-space()='EDIT_${ref}']
+    Page Should Contain Element    xpath=//h6[normalize-space()='LOA']
+    Page Should Contain Element    xpath=//p[contains(text(),'${DOCTYPE}')]
+    Page Should Contain Element    xpath=//h6[normalize-space()='Due date']
+    Page Should Contain Element    xpath=//p[normalize-space()='${newexpdate} 11:59 PM']
+
+Assert Edit Draft Verification With 2 Approvers But Without Via
+    Wait Until Element Is Visible    xpath=//p[normalize-space()='Subject :']    30s
+    Page Should Contain Element    xpath=//p[normalize-space()='Subject :']
+    Page Should Contain Element    xpath=//p[contains(text(),'Subject2A-${currentdate}-EDIT_${ref}')]
+    Page Should Contain Element    xpath=//p[normalize-space()='From :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${CREATOR}']
+    Page Should Contain Element    xpath=//p[normalize-space()='Date :']
+    Page Should Contain Element    xpath=//p[normalize-space()='${date}']
+    Page Should Contain Element    xpath=//p[normalize-space()='To :']
+    Page Should Contain Element    xpath=//p[text()='${APPROVER2PPL}']
     Page Should Contain Element    xpath=//p[normalize-space()='Doc No. :']
     Page Should Contain Element    xpath=//p[contains(text(),'DRF')]
     Page Should Contain Element    xpath=//p[normalize-space()='VIA :']
@@ -184,6 +269,30 @@ Assert Preview Without Via
     Page Should Contain Element    xpath=//span[normalize-space()='Ref. :']
     Page Should Contain Element    xpath=(//span[contains(text(),'${ref}')])[2]
 
+Assert Preview With 2 Approvers But Without Via
+    Wait Until Element Is Visible    xpath=//span[normalize-space()='Subject :']    30s
+    Page Should Contain Element    xpath=//span[normalize-space()='Subject :']
+    Page Should Contain Element    xpath=//span[contains(text(),'Subject2A-${currentdate}')]
+    Page Should Contain Element    xpath=(//span[contains(text(),'${ref}')])[1]
+    Page Should Contain Element    xpath=//span[normalize-space()='From :']
+    Page Should Contain Element    xpath=//span[contains(text(),'ประภวิษณุ์')]
+    Page Should Contain Element    xpath=//span[contains(text(),'บําเพ็ญสิน')]
+    Page Should Contain Element    xpath=//span[normalize-space()='Date :']
+    Page Should Contain Element    xpath=//span[normalize-space()='${date}']
+    Page Should Contain Element    xpath=//span[normalize-space()='To :']
+    Page Should Contain Element    xpath=//span[contains(text(),'ดารินทร์')]
+    Page Should Contain Element    xpath=//span[contains(text(),'พงศ์สุพัฒน์,')]
+    Page Should Contain Element    xpath=//span[contains(text(),'ฐาปกรณ์')]
+    Page Should Contain Element    xpath=//span[contains(text(),'หาญรักษ์')]
+    Page Should Contain Element    xpath=//span[normalize-space()='Doc']
+    Page Should Contain Element    xpath=//span[normalize-space()='No. :']
+    Page Should Contain Element    xpath=//span[normalize-space()='BNG']
+    Page Should Contain Element    xpath=//span[normalize-space()='For :']
+    Page Should Contain Element    xpath=//span[contains(text(),'${FOR_TOKNOW}')]
+    Page Should Contain Element    xpath=//span[normalize-space()='Doc']
+    Page Should Contain Element    xpath=//span[normalize-space()='Ref. :']
+    Page Should Contain Element    xpath=(//span[contains(text(),'${ref}')])[2]
+
 Assert Edit Preview Without Via
     Wait Until Element Is Visible    xpath=//span[normalize-space()='Subject :']    30s
     Page Should Contain Element    xpath=//span[normalize-space()='Subject :']
@@ -206,6 +315,30 @@ Assert Edit Preview Without Via
     Page Should Contain Element    xpath=//span[normalize-space()='Ref. :']
     Page Should Contain Element    xpath=(//span[contains(text(),'EDIT_${ref}')])[2]
 
+Assert Edit Preview With 2 Approvers But Without Via
+    Wait Until Element Is Visible    xpath=//span[normalize-space()='Subject :']    30s
+    Page Should Contain Element    xpath=//span[normalize-space()='Subject :']
+    Page Should Contain Element    xpath=//span[contains(text(),'Subject2A-${currentdate}')]
+    Page Should Contain Element    xpath=(//span[contains(text(),'EDIT_${ref}')])[1]
+    Page Should Contain Element    xpath=//span[normalize-space()='From :']
+    Page Should Contain Element    xpath=//span[contains(text(),'ประภวิษณุ์')]
+    Page Should Contain Element    xpath=//span[contains(text(),'บําเพ็ญสิน')]
+    Page Should Contain Element    xpath=//span[normalize-space()='Date :']
+    Page Should Contain Element    xpath=//span[normalize-space()='${date}']
+    Page Should Contain Element    xpath=//span[normalize-space()='To :']
+    Page Should Contain Element    xpath=//span[contains(text(),'ดารินทร์')]
+    Page Should Contain Element    xpath=//span[contains(text(),'พงศ์สุพัฒน์,')]
+    Page Should Contain Element    xpath=//span[contains(text(),'ฐาปกรณ์')]
+    Page Should Contain Element    xpath=//span[contains(text(),'หาญรักษ์')]
+    Page Should Contain Element    xpath=//span[normalize-space()='Doc']
+    Page Should Contain Element    xpath=//span[normalize-space()='No. :']
+    Page Should Contain Element    xpath=//span[contains(text(),'DRF')]
+    Page Should Contain Element    xpath=//span[normalize-space()='For :']
+    Page Should Contain Element    xpath=//span[contains(text(),'${FOR_TOCONSIDER}')]
+    Page Should Contain Element    xpath=//span[normalize-space()='Doc']
+    Page Should Contain Element    xpath=//span[normalize-space()='Ref. :']
+    Page Should Contain Element    xpath=(//span[contains(text(),'EDIT_${ref}')])[2]
+
 Exit The Preview Page
     Click Element    xpath=//span[normalize-space()='×']
 
@@ -216,12 +349,22 @@ Save All Information
 Assert Draft Document
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     Page Should Contain Element    xpath=//td[@title='Subject-${currentdate}-${ref}']
-    Capture Page Screenshot    ${PICTUREPATH}/001_Save-Draft.png
+    Capture Page Screenshot    ${PICTUREPATH}/001_${TEST NAME}.png
+
+Assert Draft Document With 2 Approvers
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Page Should Contain Element    xpath=//td[@title='Subject2A-${currentdate}-${ref}']
+    Capture Page Screenshot    ${PICTUREPATH}/001_${TEST NAME}.png
 
 Assert Edit Draft Document
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     Page Should Contain Element    xpath=//td[@title='Subject-${currentdate}-EDIT_${ref}']
-    Capture Page Screenshot    ${PICTUREPATH}/002_Save-Edit-Draft.png
+    Capture Page Screenshot    ${PICTUREPATH}/002_${TEST NAME}.png
+
+Assert Edit Draft Document With 2 Approvers
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Page Should Contain Element    xpath=//td[@title='Subject2A-${currentdate}-EDIT_${ref}']
+    Capture Page Screenshot    ${PICTUREPATH}/002_${TEST NAME}.png
 
 Click Edit Icon
     Wait Until Element Is Visible    xpath=//button[@title='Edit Document']     30s
@@ -249,21 +392,8 @@ Send Document
     Wait Until Element Is Visible    xpath=//button[normalize-space()='Send']     30s
     Click Button    xpath=//button[normalize-space()='Send']
 
-Assert Send Document
+Assert Send The Document
     Wait Until Element Is Visible    id:DataTableDocument
     Scroll Element Into View    id:DataTableDocument
     Page Should Contain Element    xpath=//td[@title='Subject-${currentdate}-EDIT_${ref}']
-    Capture Page Screenshot    ${PICTUREPATH}/003_Send-Request.png
-
-    
-
-
-
-
-
-
-    
-
-
-
-
+    Capture Page Screenshot    ${PICTUREPATH}/003_${TEST NAME}.png

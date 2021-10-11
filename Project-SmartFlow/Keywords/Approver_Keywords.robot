@@ -58,17 +58,20 @@ Signature Added
 
 Approve The Document
     Wait Until Element Is Visible    id:DataTableWaitingForMyApproval     30s
-    ${count} =	Get Element Count  //tbody/tr
+    ${count} =	Get Element Count  //p[contains(text(),'Subject-${currentdate}-EDIT_')]
     FOR    ${i}    IN RANGE    ${count}
     ${ni}  Evaluate  ${i}+1
-        Click Element    xpath=//tbody/tr[${1}]/td[10]/button[1]/img[1]
-        Wait Until Element Is Visible    xpath=//div[@class='modal-body modal-quick-preview']    30s
+        # Click Element    xpath=//tbody/tr[${1}]/td[10]/button[1]/img[1]
+        # Wait Until Element Is Visible    xpath=//div[@class='modal-body modal-quick-preview']    30s
+        # Scroll Element Into View    xpath=//button[normalize-space()='Approve']
+        # Click Button    xpath=//button[normalize-space()='Approve']
+        Click Element    xpath=//p[contains(text(),'Subject-${currentdate}-EDIT_')]
+        Wait Until Element Is Visible    xpath=//div[@class='progress-container']    30s
         Scroll Element Into View    xpath=//button[normalize-space()='Approve']
         Click Button    xpath=//button[normalize-space()='Approve']
         sleep    8s
     END
 
 Assert No Remain Documents
-    Wait Until Element Is Visible    xpath=//td[@class='dataTables_empty']    30s
-    Page Should Contain Element    xpath=//td[@class='dataTables_empty']
+    Page Should Not Contain Element    xpath=//p[contains(text(),'Subject-${currentdate}-EDIT_')]
     Capture Page Screenshot    ${PICTUREPATH}/FNAP_Approve-Documents.png

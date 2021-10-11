@@ -72,7 +72,7 @@ Back To HomePage
 Select To Create Memo Template
     Click Button    xpath=//button[normalize-space()='Create Document']
     Wait Until Element Is Visible    xpath=//button[@class='dropdown-item']
-    Click Button    xpath=//button[@class='dropdown-item']
+    Click Button    xpath=//button[@class='dropdown-item'][normalize-space()='Memo']
     Wait Until Element Is Visible    xpath=//div[@class='modal-content']    30s
     Click Element    xpath=//div[@id='ngb-tab-0-panel']//div[@class='card-body'][normalize-space()='General Center Logo (EN)']
     Wait Until Element Is Visible    xpath=//b[normalize-space()='Documents']

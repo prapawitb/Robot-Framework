@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20211005 14:16:27.784" rpa="false" schemaversion="2">
+<suite id="s1" name="Role Accountant" source="D:\Robot Framework\Project-SmartTAX\SmartTAX\Role_Accountant.robot">
+<test id="s1-t1" name="Upload Tax Invoice With Date Format Type 2">
+<kw name="Update The Tax Invoice In CSV File With 'D/M/YYYY 00:00:00' Format" library="Role_ Accountant_Keywords">
+<kw name="Create Tiv Datetype2" library="create_csv">
+<status status="PASS" starttime="20211005 14:16:28.820" endtime="20211005 14:16:28.828"/>
+</kw>
+<status status="PASS" starttime="20211005 14:16:28.819" endtime="20211005 14:16:28.828"/>
+</kw>
+<kw name="Login On Accountant Account Successful" library="Role_ Accountant_Keywords">
+<arg>automation_role_account</arg>
+<arg>Automated1234@</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211005 14:16:28.830" level="INFO">Opening browser 'chrome' to base url 'https://newsmarttax.brainergy.digital/login'.</msg>
+<status status="PASS" starttime="20211005 14:16:28.829" endtime="20211005 14:16:36.157"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211005 14:16:36.157" endtime="20211005 14:16:36.277"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath=//button[contains(text(),'Login')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211005 14:16:36.277" endtime="20211005 14:16:36.312"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:username</arg>
+<arg>${login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211005 14:16:36.312" level="INFO">Typing text 'automation_role_account' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20211005 14:16:36.312" endtime="20211005 14:16:36.429"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211005 14:16:36.430" level="INFO">Typing text 'Automated1234@' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20211005 14:16:36.429" endtime="20211005 14:16:36.512"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath=//button[contains(text(),'Login')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211005 14:16:36.512" level="INFO">Clicking element 'xpath=//button[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20211005 14:16:36.512" endtime="20211005 14:16:36.550"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath=//button[contains(text(),'Download XML')]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211005 14:17:06.769" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211005 14:17:06.567" endtime="20211005 14:17:06.769"/>
+</kw>
+<msg timestamp="20211005 14:17:06.772" level="FAIL">Element 'xpath=//button[contains(text(),'Download XML')]' not visible after 30 seconds.</msg>
+<status status="FAIL" starttime="20211005 14:16:36.550" endtime="20211005 14:17:06.772"/>
+</kw>
+<status status="FAIL" starttime="20211005 14:16:28.829" endtime="20211005 14:17:06.773"/>
+</kw>
+<kw name="Select Document Upload Tab" library="Role_ Accountant_Keywords">
+<status status="NOT RUN" starttime="20211005 14:17:06.774" endtime="20211005 14:17:06.774"/>
+</kw>
+<kw name="Select Tax Invoice" library="Role_ Accountant_Keywords">
+<status status="NOT RUN" starttime="20211005 14:17:06.774" endtime="20211005 14:17:06.774"/>
+</kw>
+<kw name="Upload Tax Invoice File Datetype 2" library="Role_ Accountant_Keywords">
+<status status="NOT RUN" starttime="20211005 14:17:06.774" endtime="20211005 14:17:06.774"/>
+</kw>
+<kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211005 14:17:06.775" endtime="20211005 14:17:09.494"/>
+</kw>
+<tag>regression</tag>
+<tag>testfunc</tag>
+<status status="FAIL" starttime="20211005 14:16:28.818" endtime="20211005 14:17:09.496">Element 'xpath=//button[contains(text(),'Download XML')]' not visible after 30 seconds.</status>
+</test>
+<kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20211005 14:17:09.501" endtime="20211005 14:17:09.502"/>
+</kw>
+<status status="FAIL" starttime="20211005 14:16:27.792" endtime="20211005 14:17:09.502"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+<stat pass="0" fail="1" skip="0">testfunc</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Role Accountant">Role Accountant</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

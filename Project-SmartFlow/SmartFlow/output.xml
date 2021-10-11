@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20211007 17:03:04.897" rpa="false" schemaversion="2">
-<suite id="s1" name="Creator" source="D:\Robot Framework\Project-SmartFlow\SmartFlow\Creator.robot">
-<kw name="Initialize Random Variables" library="Creator_Keywords" type="SETUP">
+<robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20211011 15:10:45.505" rpa="false" schemaversion="2">
+<suite id="s1" name="Approver" source="D:\Robot Framework\Project-SmartFlow\SmartFlow\Approver.robot">
+<kw name="Initialize Random Variables" library="Approver_Keywords" type="SETUP">
 <kw name="Generate Random String" library="String">
 <var>${ref}</var>
 <arg>5</arg>
 <arg>0123456789ABCDEFGHIJKLMNLOPQRSTUVWXYZ</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<msg timestamp="20211007 17:03:05.466" level="INFO">${ref} = ZEGKW</msg>
-<status status="PASS" starttime="20211007 17:03:05.466" endtime="20211007 17:03:05.466"/>
+<msg timestamp="20211011 15:10:45.883" level="INFO">${ref} = IPRTU</msg>
+<status status="PASS" starttime="20211011 15:10:45.882" endtime="20211011 15:10:45.883"/>
 </kw>
 <kw name="Get Current Date" library="DateTime">
 <var>${currentdate}</var>
 <arg>result_format=%Y%m%d</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20211007 17:03:05.466" level="INFO">${currentdate} = 20211007</msg>
-<status status="PASS" starttime="20211007 17:03:05.466" endtime="20211007 17:03:05.466"/>
+<msg timestamp="20211011 15:10:45.883" level="INFO">${currentdate} = 20211011</msg>
+<status status="PASS" starttime="20211011 15:10:45.883" endtime="20211011 15:10:45.883"/>
 </kw>
 <kw name="Get Current Date" library="DateTime">
 <var>${date}</var>
 <arg>result_format=%d/%m/%Y</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20211007 17:03:05.467" level="INFO">${date} = 07/10/2021</msg>
-<status status="PASS" starttime="20211007 17:03:05.466" endtime="20211007 17:03:05.467"/>
+<msg timestamp="20211011 15:10:45.884" level="INFO">${date} = 11/10/2021</msg>
+<status status="PASS" starttime="20211011 15:10:45.883" endtime="20211011 15:10:45.884"/>
 </kw>
 <kw name="Add Time To Date" library="DateTime">
 <var>${expdate}</var>
@@ -30,8 +30,8 @@
 <arg>7 days</arg>
 <arg>result_format=%d/%m/%Y</arg>
 <doc>Adds time to date and returns the resulting date.</doc>
-<msg timestamp="20211007 17:03:05.473" level="INFO">${expdate} = 14/10/2021</msg>
-<status status="PASS" starttime="20211007 17:03:05.467" endtime="20211007 17:03:05.473"/>
+<msg timestamp="20211011 15:10:45.888" level="INFO">${expdate} = 18/10/2021</msg>
+<status status="PASS" starttime="20211011 15:10:45.884" endtime="20211011 15:10:45.888"/>
 </kw>
 <kw name="Add Time To Date" library="DateTime">
 <var>${newexpdate}</var>
@@ -39,141 +39,141 @@
 <arg>14 days</arg>
 <arg>result_format=%d/%m/%Y</arg>
 <doc>Adds time to date and returns the resulting date.</doc>
-<msg timestamp="20211007 17:03:05.473" level="INFO">${newexpdate} = 21/10/2021</msg>
-<status status="PASS" starttime="20211007 17:03:05.473" endtime="20211007 17:03:05.473"/>
+<msg timestamp="20211011 15:10:45.889" level="INFO">${newexpdate} = 25/10/2021</msg>
+<status status="PASS" starttime="20211011 15:10:45.888" endtime="20211011 15:10:45.889"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ref}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211007 17:03:05.474" level="INFO">${ref} = ZEGKW</msg>
-<status status="PASS" starttime="20211007 17:03:05.473" endtime="20211007 17:03:05.474"/>
+<msg timestamp="20211011 15:10:45.889" level="INFO">${ref} = IPRTU</msg>
+<status status="PASS" starttime="20211011 15:10:45.889" endtime="20211011 15:10:45.889"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${currentdate}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211007 17:03:05.474" level="INFO">${currentdate} = 20211007</msg>
-<status status="PASS" starttime="20211007 17:03:05.474" endtime="20211007 17:03:05.474"/>
+<msg timestamp="20211011 15:10:45.890" level="INFO">${currentdate} = 20211011</msg>
+<status status="PASS" starttime="20211011 15:10:45.889" endtime="20211011 15:10:45.890"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${date}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211007 17:03:05.474" level="INFO">${date} = 07/10/2021</msg>
-<status status="PASS" starttime="20211007 17:03:05.474" endtime="20211007 17:03:05.475"/>
+<msg timestamp="20211011 15:10:45.890" level="INFO">${date} = 11/10/2021</msg>
+<status status="PASS" starttime="20211011 15:10:45.890" endtime="20211011 15:10:45.890"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${expdate}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211007 17:03:05.475" level="INFO">${expdate} = 14/10/2021</msg>
-<status status="PASS" starttime="20211007 17:03:05.475" endtime="20211007 17:03:05.475"/>
+<msg timestamp="20211011 15:10:45.890" level="INFO">${expdate} = 18/10/2021</msg>
+<status status="PASS" starttime="20211011 15:10:45.890" endtime="20211011 15:10:45.891"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${newexpdate}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211007 17:03:05.475" level="INFO">${newexpdate} = 21/10/2021</msg>
-<status status="PASS" starttime="20211007 17:03:05.475" endtime="20211007 17:03:05.475"/>
+<msg timestamp="20211011 15:10:45.891" level="INFO">${newexpdate} = 25/10/2021</msg>
+<status status="PASS" starttime="20211011 15:10:45.891" endtime="20211011 15:10:45.891"/>
 </kw>
-<status status="PASS" starttime="20211007 17:03:05.465" endtime="20211007 17:03:05.475"/>
+<status status="PASS" starttime="20211011 15:10:45.882" endtime="20211011 15:10:45.891"/>
 </kw>
-<test id="s1-t1" name="Create Draft LOA Other With Final Approver Only">
-<kw name="Login In Successful" library="Creator_Keywords">
-<arg>prapawit_b</arg>
+<test id="s1-t1" name="Approve The Document">
+<kw name="Login In Successful" library="Approver_Keywords">
+<arg>thapagorn_h</arg>
 <arg>1234</arg>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211007 17:03:05.478" level="INFO">Opening browser 'chrome' to base url 'http://qa-smartflow.benchachinda.co.th/accounts/login'.</msg>
-<status status="PASS" starttime="20211007 17:03:05.477" endtime="20211007 17:03:15.297"/>
+<msg timestamp="20211011 15:10:45.892" level="INFO">Opening browser 'chrome' to base url 'http://qa-smartflow.benchachinda.co.th/accounts/login'.</msg>
+<status status="PASS" starttime="20211011 15:10:45.892" endtime="20211011 15:10:55.600"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211007 17:03:15.297" endtime="20211007 17:03:15.424"/>
+<status status="PASS" starttime="20211011 15:10:55.600" endtime="20211011 15:10:55.731"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>xpath=//button[normalize-space()='SIGN IN']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:15.424" endtime="20211007 17:03:15.463"/>
+<status status="PASS" starttime="20211011 15:10:55.731" endtime="20211011 15:10:55.773"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//input[@placeholder='Enter Username']</arg>
 <arg>${login}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:15.464" level="INFO">Typing text 'prapawit_b' into text field 'xpath=//input[@placeholder='Enter Username']'.</msg>
-<status status="PASS" starttime="20211007 17:03:15.463" endtime="20211007 17:03:15.563"/>
+<msg timestamp="20211011 15:10:55.773" level="INFO">Typing text 'thapagorn_h' into text field 'xpath=//input[@placeholder='Enter Username']'.</msg>
+<status status="PASS" starttime="20211011 15:10:55.773" endtime="20211011 15:10:55.879"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//input[@placeholder='Enter Password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:15.564" level="INFO">Typing text '1234' into text field 'xpath=//input[@placeholder='Enter Password']'.</msg>
-<status status="PASS" starttime="20211007 17:03:15.564" endtime="20211007 17:03:15.640"/>
+<msg timestamp="20211011 15:10:55.879" level="INFO">Typing text '1234' into text field 'xpath=//input[@placeholder='Enter Password']'.</msg>
+<status status="PASS" starttime="20211011 15:10:55.879" endtime="20211011 15:10:55.961"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>xpath=//button[normalize-space()='SIGN IN']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:15.641" level="INFO">Clicking button 'xpath=//button[normalize-space()='SIGN IN']'.</msg>
-<status status="PASS" starttime="20211007 17:03:15.641" endtime="20211007 17:03:15.718"/>
+<msg timestamp="20211011 15:10:55.961" level="INFO">Clicking button 'xpath=//button[normalize-space()='SIGN IN']'.</msg>
+<status status="PASS" starttime="20211011 15:10:55.961" endtime="20211011 15:10:56.035"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>xpath=//button[@class='btn btn-verified-and-continue']</arg>
 <arg>30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:15.718" endtime="20211007 17:03:15.958"/>
+<status status="PASS" starttime="20211011 15:10:56.035" endtime="20211011 15:10:56.280"/>
 </kw>
-<status status="PASS" starttime="20211007 17:03:05.476" endtime="20211007 17:03:15.958"/>
+<status status="PASS" starttime="20211011 15:10:45.892" endtime="20211011 15:10:56.280"/>
 </kw>
-<kw name="Input The OTP For Second Verification" library="Creator_Keywords">
+<kw name="Input The OTP For Second Verification" library="Approver_Keywords">
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:15.960" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:15.959" endtime="20211007 17:03:16.047"/>
+<msg timestamp="20211011 15:10:56.282" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]'.</msg>
+<status status="PASS" starttime="20211011 15:10:56.282" endtime="20211011 15:10:56.374"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:16.047" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:16.047" endtime="20211007 17:03:16.116"/>
+<msg timestamp="20211011 15:10:56.374" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]'.</msg>
+<status status="PASS" starttime="20211011 15:10:56.374" endtime="20211011 15:10:56.447"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:16.117" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:16.117" endtime="20211007 17:03:16.188"/>
+<msg timestamp="20211011 15:10:56.448" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]'.</msg>
+<status status="PASS" starttime="20211011 15:10:56.447" endtime="20211011 15:10:56.528"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:16.188" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:16.188" endtime="20211007 17:03:16.258"/>
+<msg timestamp="20211011 15:10:56.528" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]'.</msg>
+<status status="PASS" starttime="20211011 15:10:56.528" endtime="20211011 15:10:56.595"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:16.259" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:16.259" endtime="20211007 17:03:16.329"/>
+<msg timestamp="20211011 15:10:56.596" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]'.</msg>
+<status status="PASS" starttime="20211011 15:10:56.596" endtime="20211011 15:10:56.672"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:16.329" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:16.329" endtime="20211007 17:03:16.396"/>
+<msg timestamp="20211011 15:10:56.673" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]'.</msg>
+<status status="PASS" starttime="20211011 15:10:56.673" endtime="20211011 15:10:56.744"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>xpath=//button[@class='btn btn-verified-and-continue']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:16.396" level="INFO">Clicking button 'xpath=//button[@class='btn btn-verified-and-continue']'.</msg>
-<status status="PASS" starttime="20211007 17:03:16.396" endtime="20211007 17:03:16.458"/>
+<msg timestamp="20211011 15:10:56.744" level="INFO">Clicking button 'xpath=//button[@class='btn btn-verified-and-continue']'.</msg>
+<status status="PASS" starttime="20211011 15:10:56.744" endtime="20211011 15:10:56.803"/>
 </kw>
-<status status="PASS" starttime="20211007 17:03:15.959" endtime="20211007 17:03:16.459"/>
+<status status="PASS" starttime="20211011 15:10:56.281" endtime="20211011 15:10:56.803"/>
 </kw>
-<kw name="Assert Signature" library="Creator_Keywords">
+<kw name="Assert Signature" library="Approver_Keywords">
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${alert}</var>
 <arg>Wait Until Element Is Visible</arg>
@@ -182,1570 +182,192 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>//div[@class='modal-content']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:16.460" endtime="20211007 17:03:17.104"/>
-</kw>
-<msg timestamp="20211007 17:03:17.104" level="INFO">${alert} = True</msg>
-<status status="PASS" starttime="20211007 17:03:16.460" endtime="20211007 17:03:17.104"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${alert}' == 'True'</arg>
-<arg>Close Signature Alert</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Close Signature Alert" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-content']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:17.105" endtime="20211007 17:03:17.122"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='CANCEL']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:17.122" endtime="20211007 17:03:17.142"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='CANCEL']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:17.143" level="INFO">Clicking button 'xpath=//button[normalize-space()='CANCEL']'.</msg>
-<status status="PASS" starttime="20211007 17:03:17.142" endtime="20211007 17:03:17.200"/>
-</kw>
-<kw name="Page Should Not Contain Element" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-content']</arg>
-<arg>30s</arg>
-<doc>Verifies that element ``locator`` is not found on the current page.</doc>
-<msg timestamp="20211007 17:03:17.208" level="INFO">Current page does not contain element 'xpath=//div[@class='modal-content']'.</msg>
-<status status="PASS" starttime="20211007 17:03:17.200" endtime="20211007 17:03:17.208"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:17.104" endtime="20211007 17:03:17.208"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:17.104" endtime="20211007 17:03:17.208"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${alert}' != 'True'</arg>
-<arg>Signature Added</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211007 17:03:17.208" endtime="20211007 17:03:17.209"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:16.459" endtime="20211007 17:03:17.209"/>
-</kw>
-<kw name="Select To Create Memo Template" library="Creator_Keywords">
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Create Document']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:17.210" level="INFO">Clicking button 'xpath=//button[normalize-space()='Create Document']'.</msg>
-<status status="PASS" starttime="20211007 17:03:17.210" endtime="20211007 17:03:17.272"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[@class='dropdown-item']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:17.273" endtime="20211007 17:03:17.294"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[@class='dropdown-item']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:17.294" level="INFO">Clicking button 'xpath=//button[@class='dropdown-item']'.</msg>
-<status status="PASS" starttime="20211007 17:03:17.294" endtime="20211007 17:03:17.461"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-content']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:17.461" endtime="20211007 17:03:17.487"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//div[@id='ngb-tab-0-panel']//div[@class='card-body'][normalize-space()='General Center Logo (EN)']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:17.487" level="INFO">Clicking element 'xpath=//div[@id='ngb-tab-0-panel']//div[@class='card-body'][normalize-space()='General Center Logo (EN)']'.</msg>
-<status status="PASS" starttime="20211007 17:03:17.487" endtime="20211007 17:03:17.673"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//b[normalize-space()='Documents']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:17.673" endtime="20211007 17:03:17.709"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:17.209" endtime="20211007 17:03:17.709"/>
-</kw>
-<kw name="Fill The Infomation" library="Creator_Keywords">
-<arg>Subject-${currentdate}-${ref}</arg>
-<arg>${ref}</arg>
-<arg>ฐาปกรณ์ หาญรักษ์</arg>
-<arg>${expdate}</arg>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:17.710" endtime="20211007 17:03:17.955"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@placeholder='Subject']</arg>
-<arg>${subject}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:17.956" level="INFO">Typing text 'Subject-20211007-ZEGKW' into text field 'xpath=//input[@placeholder='Subject']'.</msg>
-<status status="PASS" starttime="20211007 17:03:17.955" endtime="20211007 17:03:18.161"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@placeholder='Document Refer']</arg>
-<arg>${randomref}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:18.162" level="INFO">Typing text 'ZEGKW' into text field 'xpath=//input[@placeholder='Document Refer']'.</msg>
-<status status="PASS" starttime="20211007 17:03:18.162" endtime="20211007 17:03:18.275"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]</arg>
-<arg>${approver}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:18.275" level="INFO">Typing text 'ฐาปกรณ์ หาญรักษ์' into text field 'xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:18.275" endtime="20211007 17:03:18.431"/>
-</kw>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]</arg>
-<arg>ENTER</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211007 17:03:18.431" level="INFO">Sending key(s) ('ENTER',) to xpath=//body/app-root[1]/app-layouts[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-create-new-document[1]/memo1[1]/form[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1] element.</msg>
-<msg timestamp="20211007 17:03:18.721" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20211007 17:03:18.721" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20211007 17:03:18.431" endtime="20211007 17:03:18.734"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@formcontrolname='expire_date']</arg>
-<arg>${expdate}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:18.734" level="INFO">Typing text '14/10/2021' into text field 'xpath=//input[@formcontrolname='expire_date']'.</msg>
-<status status="PASS" starttime="20211007 17:03:18.734" endtime="20211007 17:03:18.849"/>
-</kw>
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211007 17:03:18.850" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20211007 17:03:18.850" endtime="20211007 17:03:18.855"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Next']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:18.855" level="INFO">Clicking button 'xpath=//button[normalize-space()='Next']'.</msg>
-<status status="PASS" starttime="20211007 17:03:18.855" endtime="20211007 17:03:19.051"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:17.710" endtime="20211007 17:03:19.051"/>
-</kw>
-<kw name="Assert First Verification Without Via" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Subject :']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:19.052" endtime="20211007 17:03:19.094"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Subject :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.101" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Subject :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.094" endtime="20211007 17:03:19.101"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'Subject-${currentdate}-${ref}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.113" level="INFO">Current page contains element 'xpath=//p[contains(text(),'Subject-20211007-ZEGKW')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.101" endtime="20211007 17:03:19.113"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='From :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.126" level="INFO">Current page contains element 'xpath=//p[normalize-space()='From :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.114" endtime="20211007 17:03:19.126"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${CREATOR}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.141" level="INFO">Current page contains element 'xpath=//p[normalize-space()='ประภวิษณุ์ บำเพ็ญสิน']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.126" endtime="20211007 17:03:19.142"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Date :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.153" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Date :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.142" endtime="20211007 17:03:19.153"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${date}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.168" level="INFO">Current page contains element 'xpath=//p[normalize-space()='07/10/2021']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.154" endtime="20211007 17:03:19.168"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='To :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.181" level="INFO">Current page contains element 'xpath=//p[normalize-space()='To :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.168" endtime="20211007 17:03:19.181"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${APPROVER}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.195" level="INFO">Current page contains element 'xpath=//p[contains(text(),'ฐาปกรณ์ หาญรักษ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.181" endtime="20211007 17:03:19.195"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Doc No. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.205" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Doc No. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.195" endtime="20211007 17:03:19.206"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${BU}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.219" level="INFO">Current page contains element 'xpath=//p[normalize-space()='BNG']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.206" endtime="20211007 17:03:19.219"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='VIA :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.233" level="INFO">Current page contains element 'xpath=//p[normalize-space()='VIA :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.219" endtime="20211007 17:03:19.233"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='-']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.257" level="INFO">Current page contains element 'xpath=//p[normalize-space()='-']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.233" endtime="20211007 17:03:19.257"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='For :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.283" level="INFO">Current page contains element 'xpath=//p[normalize-space()='For :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.257" endtime="20211007 17:03:19.283"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${FOR_TOKNOW}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.293" level="INFO">Current page contains element 'xpath=//p[contains(text(),'เพื่อทราบ')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.283" endtime="20211007 17:03:19.294"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Doc Refer. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.307" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Doc Refer. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.294" endtime="20211007 17:03:19.307"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${ref}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.319" level="INFO">Current page contains element 'xpath=//p[normalize-space()='ZEGKW']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.308" endtime="20211007 17:03:19.319"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//h6[normalize-space()='LOA']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.332" level="INFO">Current page contains element 'xpath=//h6[normalize-space()='LOA']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.319" endtime="20211007 17:03:19.332"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${DOCTYPE}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.341" level="INFO">Current page contains element 'xpath=//p[contains(text(),'อื่นๆ')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.332" endtime="20211007 17:03:19.342"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//h6[normalize-space()='Due date']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.355" level="INFO">Current page contains element 'xpath=//h6[normalize-space()='Due date']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.342" endtime="20211007 17:03:19.355"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${expdate} 11:59 PM']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:19.367" level="INFO">Current page contains element 'xpath=//p[normalize-space()='14/10/2021 11:59 PM']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.355" endtime="20211007 17:03:19.367"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:19.052" endtime="20211007 17:03:19.367"/>
-</kw>
-<kw name="Click Preview Button" library="Creator_Keywords">
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211007 17:03:19.369" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20211007 17:03:19.368" endtime="20211007 17:03:19.373"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Preview']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:19.373" level="INFO">Clicking button 'xpath=//button[normalize-space()='Preview']'.</msg>
-<status status="PASS" starttime="20211007 17:03:19.373" endtime="20211007 17:03:19.762"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-body modal-doc-preview']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:19.762" endtime="20211007 17:03:19.949"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:19.368" endtime="20211007 17:03:19.950"/>
-</kw>
-<kw name="Assert Preview Without Via" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Subject :']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:19.952" endtime="20211007 17:03:20.699"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Subject :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.706" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Subject :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.701" endtime="20211007 17:03:20.708"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'Subject-${currentdate}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.717" level="INFO">Current page contains element 'xpath=//span[contains(text(),'Subject-20211007')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.708" endtime="20211007 17:03:20.717"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=(//span[contains(text(),'${ref}')])[1]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.727" level="INFO">Current page contains element 'xpath=(//span[contains(text(),'ZEGKW')])[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.718" endtime="20211007 17:03:20.727"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='From :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.738" level="INFO">Current page contains element 'xpath=//span[normalize-space()='From :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.728" endtime="20211007 17:03:20.738"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'ประภวิษณุ์')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.748" level="INFO">Current page contains element 'xpath=//span[contains(text(),'ประภวิษณุ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.738" endtime="20211007 17:03:20.748"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'บําเพ็ญสิน')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.758" level="INFO">Current page contains element 'xpath=//span[contains(text(),'บําเพ็ญสิน')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.748" endtime="20211007 17:03:20.758"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Date :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.769" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Date :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.758" endtime="20211007 17:03:20.769"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='${date}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.780" level="INFO">Current page contains element 'xpath=//span[normalize-space()='07/10/2021']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.769" endtime="20211007 17:03:20.780"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='To :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.790" level="INFO">Current page contains element 'xpath=//span[normalize-space()='To :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.780" endtime="20211007 17:03:20.790"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'ฐาปกรณ์')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.801" level="INFO">Current page contains element 'xpath=//span[contains(text(),'ฐาปกรณ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.790" endtime="20211007 17:03:20.801"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'หาญรักษ์')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.811" level="INFO">Current page contains element 'xpath=//span[contains(text(),'หาญรักษ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.801" endtime="20211007 17:03:20.812"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Doc']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.822" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Doc']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.812" endtime="20211007 17:03:20.822"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='No. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.832" level="INFO">Current page contains element 'xpath=//span[normalize-space()='No. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.822" endtime="20211007 17:03:20.832"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='BNG']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.843" level="INFO">Current page contains element 'xpath=//span[normalize-space()='BNG']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.833" endtime="20211007 17:03:20.843"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='For :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.853" level="INFO">Current page contains element 'xpath=//span[normalize-space()='For :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.843" endtime="20211007 17:03:20.853"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'${FOR_TOKNOW}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.864" level="INFO">Current page contains element 'xpath=//span[contains(text(),'เพื่อทราบ')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.853" endtime="20211007 17:03:20.864"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Doc']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.872" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Doc']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.864" endtime="20211007 17:03:20.872"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Ref. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.883" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Ref. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.872" endtime="20211007 17:03:20.883"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=(//span[contains(text(),'${ref}')])[2]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:20.894" level="INFO">Current page contains element 'xpath=(//span[contains(text(),'ZEGKW')])[2]'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.883" endtime="20211007 17:03:20.894"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:19.950" endtime="20211007 17:03:20.894"/>
-</kw>
-<kw name="Exit The Preview Page" library="Creator_Keywords">
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='×']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:20.895" level="INFO">Clicking element 'xpath=//span[normalize-space()='×']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.895" endtime="20211007 17:03:20.952"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:20.895" endtime="20211007 17:03:20.952"/>
-</kw>
-<kw name="Save All Information" library="Creator_Keywords">
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211007 17:03:20.954" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20211007 17:03:20.953" endtime="20211007 17:03:20.960"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Save']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:20.960" level="INFO">Clicking button 'xpath=//button[normalize-space()='Save']'.</msg>
-<status status="PASS" starttime="20211007 17:03:20.960" endtime="20211007 17:03:21.032"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:20.953" endtime="20211007 17:03:21.032"/>
-</kw>
-<kw name="Back To HomePage" library="Creator_Keywords">
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211007 17:03:26.036" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211007 17:03:21.033" endtime="20211007 17:03:26.036"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//img[@src='assets/images/logo.png']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:26.037" level="INFO">Clicking element 'xpath=//img[@src='assets/images/logo.png']'.</msg>
-<status status="PASS" starttime="20211007 17:03:26.036" endtime="20211007 17:03:26.180"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Create Document']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:26.181" endtime="20211007 17:03:26.203"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:21.033" endtime="20211007 17:03:26.203"/>
-</kw>
-<kw name="Select Draft Tab" library="Creator_Keywords">
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//a[normalize-space()='DRAFT']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:26.205" level="INFO">Clicking element 'xpath=//a[normalize-space()='DRAFT']'.</msg>
-<status status="PASS" starttime="20211007 17:03:26.204" endtime="20211007 17:03:26.291"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>id:DataTableDraft</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:26.291" endtime="20211007 17:03:27.456"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:26.203" endtime="20211007 17:03:27.457"/>
-</kw>
-<kw name="Assert Draft Document" library="Creator_Keywords">
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211007 17:03:27.458" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20211007 17:03:27.457" endtime="20211007 17:03:27.461"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//td[@title='Subject-${currentdate}-${ref}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:27.472" level="INFO">Current page contains element 'xpath=//td[@title='Subject-20211007-ZEGKW']'.</msg>
-<status status="PASS" starttime="20211007 17:03:27.461" endtime="20211007 17:03:27.472"/>
-</kw>
+<msg timestamp="20211011 15:10:57.257" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
-<arg>${PICTUREPATH}/001_Save-Draft.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211007 17:03:27.598" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Capture_Result/001_Save-Draft.png"&gt;&lt;img src="Capture_Result/001_Save-Draft.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211007 17:03:27.473" endtime="20211007 17:03:27.598"/>
+<msg timestamp="20211011 15:11:02.140" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211011 15:11:01.991" endtime="20211011 15:11:02.140"/>
 </kw>
-<status status="PASS" starttime="20211007 17:03:27.457" endtime="20211007 17:03:27.599"/>
+<msg timestamp="20211011 15:11:02.143" level="FAIL">Element '//div[@class='modal-content']' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20211011 15:10:56.805" endtime="20211011 15:11:02.143"/>
 </kw>
-<kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20211007 17:03:27.599" endtime="20211007 17:03:30.368"/>
-</kw>
-<tag>regression</tag>
-<status status="PASS" starttime="20211007 17:03:05.475" endtime="20211007 17:03:30.369"/>
-</test>
-<test id="s1-t2" name="Edit Draft LOA Other With Final Approver Only">
-<kw name="Login In Successful" library="Creator_Keywords">
-<arg>prapawit_b</arg>
-<arg>1234</arg>
-<kw name="Open Browser" library="Selenium2Library">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211007 17:03:30.377" level="INFO">Opening browser 'chrome' to base url 'http://qa-smartflow.benchachinda.co.th/accounts/login'.</msg>
-<status status="PASS" starttime="20211007 17:03:30.376" endtime="20211007 17:03:38.288"/>
-</kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211007 17:03:38.288" endtime="20211007 17:03:38.416"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='SIGN IN']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:38.417" endtime="20211007 17:03:38.455"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@placeholder='Enter Username']</arg>
-<arg>${login}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:38.459" level="INFO">Typing text 'prapawit_b' into text field 'xpath=//input[@placeholder='Enter Username']'.</msg>
-<status status="PASS" starttime="20211007 17:03:38.457" endtime="20211007 17:03:38.564"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@placeholder='Enter Password']</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:38.565" level="INFO">Typing text '1234' into text field 'xpath=//input[@placeholder='Enter Password']'.</msg>
-<status status="PASS" starttime="20211007 17:03:38.564" endtime="20211007 17:03:38.651"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='SIGN IN']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:38.652" level="INFO">Clicking button 'xpath=//button[normalize-space()='SIGN IN']'.</msg>
-<status status="PASS" starttime="20211007 17:03:38.652" endtime="20211007 17:03:38.727"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[@class='btn btn-verified-and-continue']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:38.727" endtime="20211007 17:03:38.963"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:30.374" endtime="20211007 17:03:38.963"/>
-</kw>
-<kw name="Input The OTP For Second Verification" library="Creator_Keywords">
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:38.965" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:38.964" endtime="20211007 17:03:39.052"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:39.052" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:39.052" endtime="20211007 17:03:39.122"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:39.123" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:39.122" endtime="20211007 17:03:39.195"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:39.195" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:39.195" endtime="20211007 17:03:39.265"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:39.266" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:39.265" endtime="20211007 17:03:39.333"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:39.334" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:39.333" endtime="20211007 17:03:39.401"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[@class='btn btn-verified-and-continue']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:39.402" level="INFO">Clicking button 'xpath=//button[@class='btn btn-verified-and-continue']'.</msg>
-<status status="PASS" starttime="20211007 17:03:39.402" endtime="20211007 17:03:39.464"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:38.964" endtime="20211007 17:03:39.464"/>
-</kw>
-<kw name="Assert Signature" library="Creator_Keywords">
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${alert}</var>
-<arg>Wait Until Element Is Visible</arg>
-<arg>//div[@class='modal-content']</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>//div[@class='modal-content']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:39.465" endtime="20211007 17:03:40.035"/>
-</kw>
-<msg timestamp="20211007 17:03:40.035" level="INFO">${alert} = True</msg>
-<status status="PASS" starttime="20211007 17:03:39.465" endtime="20211007 17:03:40.035"/>
+<msg timestamp="20211011 15:11:02.143" level="INFO">${alert} = False</msg>
+<status status="PASS" starttime="20211011 15:10:56.804" endtime="20211011 15:11:02.143"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${alert}' == 'True'</arg>
 <arg>Close Signature Alert</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Close Signature Alert" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-content']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:40.036" endtime="20211007 17:03:40.050"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='CANCEL']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:40.050" endtime="20211007 17:03:40.072"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='CANCEL']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:40.072" level="INFO">Clicking button 'xpath=//button[normalize-space()='CANCEL']'.</msg>
-<status status="PASS" starttime="20211007 17:03:40.072" endtime="20211007 17:03:40.134"/>
-</kw>
-<kw name="Page Should Not Contain Element" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-content']</arg>
-<arg>30s</arg>
-<doc>Verifies that element ``locator`` is not found on the current page.</doc>
-<msg timestamp="20211007 17:03:40.142" level="INFO">Current page does not contain element 'xpath=//div[@class='modal-content']'.</msg>
-<status status="PASS" starttime="20211007 17:03:40.134" endtime="20211007 17:03:40.142"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:40.036" endtime="20211007 17:03:40.142"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:40.035" endtime="20211007 17:03:40.143"/>
+<status status="PASS" starttime="20211011 15:11:02.143" endtime="20211011 15:11:02.144"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${alert}' != 'True'</arg>
 <arg>Signature Added</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211007 17:03:40.143" endtime="20211007 17:03:40.143"/>
+<kw name="Signature Added" library="Approver_Keywords">
+<kw name="Get Text" library="Selenium2Library">
+<var>${accountname}</var>
+<arg>//span[@class='font-weight-bold mb-2']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211011 15:11:02.168" level="INFO">${accountname} = Thapagorn</msg>
+<status status="PASS" starttime="20211011 15:11:02.144" endtime="20211011 15:11:02.168"/>
 </kw>
-<status status="PASS" starttime="20211007 17:03:39.464" endtime="20211007 17:03:40.143"/>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${accountname}</arg>
+<arg>Thapagorn</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20211011 15:11:02.168" endtime="20211011 15:11:02.168"/>
 </kw>
-<kw name="Select Draft Tab" library="Creator_Keywords">
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//a[normalize-space()='DRAFT']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:40.144" level="INFO">Clicking element 'xpath=//a[normalize-space()='DRAFT']'.</msg>
-<status status="PASS" starttime="20211007 17:03:40.144" endtime="20211007 17:03:40.228"/>
+<status status="PASS" starttime="20211011 15:11:02.144" endtime="20211011 15:11:02.168"/>
 </kw>
+<status status="PASS" starttime="20211011 15:11:02.144" endtime="20211011 15:11:02.168"/>
+</kw>
+<status status="PASS" starttime="20211011 15:10:56.804" endtime="20211011 15:11:02.168"/>
+</kw>
+<kw name="Approve The Document" library="Approver_Keywords">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>id:DataTableDraft</arg>
+<arg>id:DataTableWaitingForMyApproval</arg>
 <arg>30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:40.228" endtime="20211007 17:03:41.422"/>
+<status status="PASS" starttime="20211011 15:11:02.169" endtime="20211011 15:11:02.189"/>
 </kw>
-<status status="PASS" starttime="20211007 17:03:40.144" endtime="20211007 17:03:41.422"/>
+<kw name="Get Element Count" library="Selenium2Library">
+<var>${count}</var>
+<arg>//tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20211011 15:11:02.200" level="INFO">${count} = 2</msg>
+<status status="PASS" starttime="20211011 15:11:02.189" endtime="20211011 15:11:02.200"/>
 </kw>
-<kw name="Click Edit Icon" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[@title='Edit Document']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:41.423" endtime="20211007 17:03:41.442"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[@title='Edit Document']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:41.443" level="INFO">Clicking button 'xpath=//button[@title='Edit Document']'.</msg>
-<status status="PASS" starttime="20211007 17:03:41.443" endtime="20211007 17:03:41.584"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:41.423" endtime="20211007 17:03:41.584"/>
-</kw>
-<kw name="Assert Draft Verification Without Via" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Subject :']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:41.586" endtime="20211007 17:03:42.105"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Subject :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.112" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Subject :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.105" endtime="20211007 17:03:42.112"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'Subject-${currentdate}-${ref}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.122" level="INFO">Current page contains element 'xpath=//p[contains(text(),'Subject-20211007-ZEGKW')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.112" endtime="20211007 17:03:42.123"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='From :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.137" level="INFO">Current page contains element 'xpath=//p[normalize-space()='From :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.123" endtime="20211007 17:03:42.138"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${CREATOR}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.152" level="INFO">Current page contains element 'xpath=//p[normalize-space()='ประภวิษณุ์ บำเพ็ญสิน']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.138" endtime="20211007 17:03:42.152"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Date :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.163" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Date :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.152" endtime="20211007 17:03:42.163"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${date}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.173" level="INFO">Current page contains element 'xpath=//p[normalize-space()='07/10/2021']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.163" endtime="20211007 17:03:42.173"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='To :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.183" level="INFO">Current page contains element 'xpath=//p[normalize-space()='To :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.174" endtime="20211007 17:03:42.183"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${APPROVER}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.194" level="INFO">Current page contains element 'xpath=//p[contains(text(),'ฐาปกรณ์ หาญรักษ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.184" endtime="20211007 17:03:42.194"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Doc No. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.203" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Doc No. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.194" endtime="20211007 17:03:42.203"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'DRF')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.214" level="INFO">Current page contains element 'xpath=//p[contains(text(),'DRF')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.203" endtime="20211007 17:03:42.214"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='VIA :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.224" level="INFO">Current page contains element 'xpath=//p[normalize-space()='VIA :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.214" endtime="20211007 17:03:42.224"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='-']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.233" level="INFO">Current page contains element 'xpath=//p[normalize-space()='-']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.224" endtime="20211007 17:03:42.234"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='For :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.245" level="INFO">Current page contains element 'xpath=//p[normalize-space()='For :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.234" endtime="20211007 17:03:42.245"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${FOR_TOKNOW}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.256" level="INFO">Current page contains element 'xpath=//p[contains(text(),'เพื่อทราบ')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.245" endtime="20211007 17:03:42.256"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Doc Refer. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.269" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Doc Refer. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.256" endtime="20211007 17:03:42.269"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${ref}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.280" level="INFO">Current page contains element 'xpath=//p[normalize-space()='ZEGKW']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.269" endtime="20211007 17:03:42.280"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//h6[normalize-space()='LOA']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.292" level="INFO">Current page contains element 'xpath=//h6[normalize-space()='LOA']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.280" endtime="20211007 17:03:42.292"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${DOCTYPE}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.303" level="INFO">Current page contains element 'xpath=//p[contains(text(),'อื่นๆ')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.292" endtime="20211007 17:03:42.304"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//h6[normalize-space()='Due date']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.314" level="INFO">Current page contains element 'xpath=//h6[normalize-space()='Due date']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.304" endtime="20211007 17:03:42.314"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${expdate} 11:59 PM']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:42.324" level="INFO">Current page contains element 'xpath=//p[normalize-space()='14/10/2021 11:59 PM']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.314" endtime="20211007 17:03:42.324"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:41.585" endtime="20211007 17:03:42.324"/>
-</kw>
-<kw name="Click Edit Button" library="Creator_Keywords">
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[@class='btn btn-edit']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:42.325" level="INFO">Clicking button 'xpath=//button[@class='btn btn-edit']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.325" endtime="20211007 17:03:42.425"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-content']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:42.425" endtime="20211007 17:03:42.445"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:42.325" endtime="20211007 17:03:42.445"/>
-</kw>
-<kw name="Edit Document After Draft" library="Creator_Keywords">
-<arg>Subject-${currentdate}-EDIT_${ref}</arg>
-<arg>EDIT_${ref}</arg>
-<arg>${newexpdate}</arg>
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//ng-select[@placeholder='For']//span[@class='ng-arrow-wrapper']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:42.447" level="INFO">Clicking element 'xpath=//ng-select[@placeholder='For']//span[@class='ng-arrow-wrapper']'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.447" endtime="20211007 17:03:42.525"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='ng-dropdown-panel-items scroll-host']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:42.526" endtime="20211007 17:03:42.548"/>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>${count}</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${ni}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211011 15:11:02.201" level="INFO">${ni} = 1</msg>
+<status status="PASS" starttime="20211011 15:11:02.200" endtime="20211011 15:11:02.201"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//div[@container='body'][contains(text(),'${FOR_TOCONSIDER}')]</arg>
+<arg>xpath=//tbody/tr[${1}]/td[10]/button[1]/img[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:42.548" level="INFO">Clicking element 'xpath=//div[@container='body'][contains(text(),'เพื่อพิจารณา')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.548" endtime="20211007 17:03:42.744"/>
+<msg timestamp="20211011 15:11:02.201" level="INFO">Clicking element 'xpath=//tbody/tr[1]/td[10]/button[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211011 15:11:02.201" endtime="20211011 15:11:02.259"/>
 </kw>
-<kw name="Clear Element Text" library="Selenium2Library">
-<arg>id:subject</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20211007 17:03:42.744" endtime="20211007 17:03:42.794"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>id:subject</arg>
-<arg>${editsubject}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:42.795" level="INFO">Typing text 'Subject-20211007-EDIT_ZEGKW' into text field 'id:subject'.</msg>
-<status status="PASS" starttime="20211007 17:03:42.794" endtime="20211007 17:03:43.031"/>
-</kw>
-<kw name="Clear Element Text" library="Selenium2Library">
-<arg>xpath=//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[3]/div[2]/input[1]</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20211007 17:03:43.031" endtime="20211007 17:03:43.092"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[3]/div[2]/input[1]</arg>
-<arg>${editref}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:43.092" level="INFO">Typing text 'EDIT_ZEGKW' into text field 'xpath=//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[3]/div[2]/input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.092" endtime="20211007 17:03:43.217"/>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath=//div[@class='modal-body modal-quick-preview']</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211011 15:11:02.259" endtime="20211011 15:11:02.953"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>xpath=//button[@type='button'][normalize-space()='Save']</arg>
+<arg>xpath=//button[normalize-space()='Approve']</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20211007 17:03:43.217" endtime="20211007 17:03:43.534"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/form[1]/div[5]/div[1]/div[3]/div[1]/input[1]</arg>
-<arg>${newexpdate}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:43.535" level="INFO">Typing text '21/10/2021' into text field 'xpath=//body/ngb-modal-window[1]/div[1]/div[1]/div[2]/form[1]/div[5]/div[1]/div[3]/div[1]/input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.534" endtime="20211007 17:03:43.691"/>
+<status status="PASS" starttime="20211011 15:11:02.953" endtime="20211011 15:11:03.247"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[@type='button'][normalize-space()='Save']</arg>
+<arg>xpath=//button[normalize-space()='Approve']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:43.692" level="INFO">Clicking button 'xpath=//button[@type='button'][normalize-space()='Save']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.691" endtime="20211007 17:03:43.772"/>
+<msg timestamp="20211011 15:11:03.248" level="INFO">Clicking button 'xpath=//button[normalize-space()='Approve']'.</msg>
+<status status="PASS" starttime="20211011 15:11:03.247" endtime="20211011 15:11:03.358"/>
 </kw>
-<status status="PASS" starttime="20211007 17:03:42.446" endtime="20211007 17:03:43.772"/>
-</kw>
-<kw name="Assert Edit Draft Verification Without Via" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Subject :']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:43.775" endtime="20211007 17:03:43.792"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Subject :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.799" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Subject :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.792" endtime="20211007 17:03:43.799"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'Subject-${currentdate}-EDIT_${ref}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.810" level="INFO">Current page contains element 'xpath=//p[contains(text(),'Subject-20211007-EDIT_ZEGKW')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.799" endtime="20211007 17:03:43.810"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='From :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.817" level="INFO">Current page contains element 'xpath=//p[normalize-space()='From :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.810" endtime="20211007 17:03:43.817"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${CREATOR}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.824" level="INFO">Current page contains element 'xpath=//p[normalize-space()='ประภวิษณุ์ บำเพ็ญสิน']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.818" endtime="20211007 17:03:43.824"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Date :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.831" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Date :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.824" endtime="20211007 17:03:43.831"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${date}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.838" level="INFO">Current page contains element 'xpath=//p[normalize-space()='07/10/2021']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.831" endtime="20211007 17:03:43.838"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='To :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.844" level="INFO">Current page contains element 'xpath=//p[normalize-space()='To :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.838" endtime="20211007 17:03:43.844"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${APPROVER}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.851" level="INFO">Current page contains element 'xpath=//p[contains(text(),'ฐาปกรณ์ หาญรักษ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.844" endtime="20211007 17:03:43.851"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Doc No. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.858" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Doc No. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.851" endtime="20211007 17:03:43.858"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'DRF')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.863" level="INFO">Current page contains element 'xpath=//p[contains(text(),'DRF')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.858" endtime="20211007 17:03:43.863"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='VIA :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.870" level="INFO">Current page contains element 'xpath=//p[normalize-space()='VIA :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.863" endtime="20211007 17:03:43.870"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='-']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.877" level="INFO">Current page contains element 'xpath=//p[normalize-space()='-']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.870" endtime="20211007 17:03:43.877"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='For :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.883" level="INFO">Current page contains element 'xpath=//p[normalize-space()='For :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.877" endtime="20211007 17:03:43.883"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${FOR_TOCONSIDER}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.893" level="INFO">Current page contains element 'xpath=//p[contains(text(),'เพื่อพิจารณา')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.883" endtime="20211007 17:03:43.893"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='Doc Refer. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.899" level="INFO">Current page contains element 'xpath=//p[normalize-space()='Doc Refer. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.893" endtime="20211007 17:03:43.899"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='EDIT_${ref}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.909" level="INFO">Current page contains element 'xpath=//p[normalize-space()='EDIT_ZEGKW']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.899" endtime="20211007 17:03:43.909"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//h6[normalize-space()='LOA']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.916" level="INFO">Current page contains element 'xpath=//h6[normalize-space()='LOA']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.909" endtime="20211007 17:03:43.916"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[contains(text(),'${DOCTYPE}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.924" level="INFO">Current page contains element 'xpath=//p[contains(text(),'อื่นๆ')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.916" endtime="20211007 17:03:43.924"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//h6[normalize-space()='Due date']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.931" level="INFO">Current page contains element 'xpath=//h6[normalize-space()='Due date']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.924" endtime="20211007 17:03:43.931"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//p[normalize-space()='${newexpdate} 11:59 PM']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:43.942" level="INFO">Current page contains element 'xpath=//p[normalize-space()='21/10/2021 11:59 PM']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.931" endtime="20211007 17:03:43.942"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:43.774" endtime="20211007 17:03:43.942"/>
-</kw>
-<kw name="Click Preview Button" library="Creator_Keywords">
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211007 17:03:43.943" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20211007 17:03:43.943" endtime="20211007 17:03:43.949"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Preview']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:43.949" level="INFO">Clicking button 'xpath=//button[normalize-space()='Preview']'.</msg>
-<status status="PASS" starttime="20211007 17:03:43.949" endtime="20211007 17:03:44.308"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-body modal-doc-preview']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:44.308" endtime="20211007 17:03:44.464"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:43.943" endtime="20211007 17:03:44.464"/>
-</kw>
-<kw name="Assert Edit Preview Without Via" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Subject :']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:44.465" endtime="20211007 17:03:44.988"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Subject :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:44.994" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Subject :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:44.988" endtime="20211007 17:03:44.994"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'Subject-${currentdate}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.004" level="INFO">Current page contains element 'xpath=//span[contains(text(),'Subject-20211007')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:44.994" endtime="20211007 17:03:45.004"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=(//span[contains(text(),'EDIT_${ref}')])[1]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.014" level="INFO">Current page contains element 'xpath=(//span[contains(text(),'EDIT_ZEGKW')])[1]'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.004" endtime="20211007 17:03:45.014"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='From :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.024" level="INFO">Current page contains element 'xpath=//span[normalize-space()='From :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.014" endtime="20211007 17:03:45.024"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'ประภวิษณุ์')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.033" level="INFO">Current page contains element 'xpath=//span[contains(text(),'ประภวิษณุ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.024" endtime="20211007 17:03:45.033"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'บําเพ็ญสิน')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.043" level="INFO">Current page contains element 'xpath=//span[contains(text(),'บําเพ็ญสิน')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.033" endtime="20211007 17:03:45.043"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Date :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.053" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Date :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.043" endtime="20211007 17:03:45.053"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='${date}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.064" level="INFO">Current page contains element 'xpath=//span[normalize-space()='07/10/2021']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.054" endtime="20211007 17:03:45.064"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='To :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.075" level="INFO">Current page contains element 'xpath=//span[normalize-space()='To :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.064" endtime="20211007 17:03:45.075"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'ฐาปกรณ์')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.086" level="INFO">Current page contains element 'xpath=//span[contains(text(),'ฐาปกรณ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.075" endtime="20211007 17:03:45.086"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'หาญรักษ์')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.096" level="INFO">Current page contains element 'xpath=//span[contains(text(),'หาญรักษ์')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.086" endtime="20211007 17:03:45.096"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Doc']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.106" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Doc']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.096" endtime="20211007 17:03:45.106"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='No. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.116" level="INFO">Current page contains element 'xpath=//span[normalize-space()='No. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.106" endtime="20211007 17:03:45.116"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'DRF')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.126" level="INFO">Current page contains element 'xpath=//span[contains(text(),'DRF')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.116" endtime="20211007 17:03:45.126"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='For :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.136" level="INFO">Current page contains element 'xpath=//span[normalize-space()='For :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.126" endtime="20211007 17:03:45.136"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[contains(text(),'${FOR_TOCONSIDER}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.146" level="INFO">Current page contains element 'xpath=//span[contains(text(),'เพื่อพิจารณา')]'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.136" endtime="20211007 17:03:45.146"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Doc']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.152" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Doc']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.147" endtime="20211007 17:03:45.152"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='Ref. :']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.162" level="INFO">Current page contains element 'xpath=//span[normalize-space()='Ref. :']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.152" endtime="20211007 17:03:45.162"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=(//span[contains(text(),'EDIT_${ref}')])[2]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:45.172" level="INFO">Current page contains element 'xpath=(//span[contains(text(),'EDIT_ZEGKW')])[2]'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.162" endtime="20211007 17:03:45.172"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:44.465" endtime="20211007 17:03:45.172"/>
-</kw>
-<kw name="Exit The Preview Page" library="Creator_Keywords">
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//span[normalize-space()='×']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:45.174" level="INFO">Clicking element 'xpath=//span[normalize-space()='×']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.173" endtime="20211007 17:03:45.226"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:45.173" endtime="20211007 17:03:45.226"/>
-</kw>
-<kw name="Save All Information" library="Creator_Keywords">
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211007 17:03:45.227" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20211007 17:03:45.227" endtime="20211007 17:03:45.232"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Save']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:45.232" level="INFO">Clicking button 'xpath=//button[normalize-space()='Save']'.</msg>
-<status status="PASS" starttime="20211007 17:03:45.232" endtime="20211007 17:03:45.305"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:45.227" endtime="20211007 17:03:45.305"/>
-</kw>
-<kw name="Back To HomePage" library="Creator_Keywords">
 <kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
+<arg>8s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211007 17:03:50.310" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211007 17:03:45.307" endtime="20211007 17:03:50.310"/>
+<msg timestamp="20211011 15:11:11.366" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20211011 15:11:03.358" endtime="20211011 15:11:11.366"/>
+</kw>
+<status status="PASS" starttime="20211011 15:11:02.200" endtime="20211011 15:11:11.366"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${ni}</var>
+<arg>${i}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211011 15:11:11.368" level="INFO">${ni} = 2</msg>
+<status status="PASS" starttime="20211011 15:11:11.367" endtime="20211011 15:11:11.368"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//img[@src='assets/images/logo.png']</arg>
+<arg>xpath=//tbody/tr[${1}]/td[10]/button[1]/img[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:50.310" level="INFO">Clicking element 'xpath=//img[@src='assets/images/logo.png']'.</msg>
-<status status="PASS" starttime="20211007 17:03:50.310" endtime="20211007 17:03:50.409"/>
+<msg timestamp="20211011 15:11:11.369" level="INFO">Clicking element 'xpath=//tbody/tr[1]/td[10]/button[1]/img[1]'.</msg>
+<status status="PASS" starttime="20211011 15:11:11.368" endtime="20211011 15:11:11.459"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Create Document']</arg>
+<arg>xpath=//div[@class='modal-body modal-quick-preview']</arg>
 <arg>30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:50.409" endtime="20211007 17:03:50.439"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:45.306" endtime="20211007 17:03:50.440"/>
-</kw>
-<kw name="Select Draft Tab" library="Creator_Keywords">
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//a[normalize-space()='DRAFT']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:03:50.441" level="INFO">Clicking element 'xpath=//a[normalize-space()='DRAFT']'.</msg>
-<status status="PASS" starttime="20211007 17:03:50.440" endtime="20211007 17:03:50.511"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>id:DataTableDraft</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:03:50.511" endtime="20211007 17:03:51.628"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:50.440" endtime="20211007 17:03:51.628"/>
-</kw>
-<kw name="Assert Edit Draft Document" library="Creator_Keywords">
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211007 17:03:51.630" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20211007 17:03:51.630" endtime="20211007 17:03:51.634"/>
-</kw>
-<kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//td[@title='Subject-${currentdate}-EDIT_${ref}']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:03:51.646" level="INFO">Current page contains element 'xpath=//td[@title='Subject-20211007-EDIT_ZEGKW']'.</msg>
-<status status="PASS" starttime="20211007 17:03:51.634" endtime="20211007 17:03:51.646"/>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<arg>${PICTUREPATH}/002_Save-Edit-Draft.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211007 17:03:51.774" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Capture_Result/002_Save-Edit-Draft.png"&gt;&lt;img src="Capture_Result/002_Save-Edit-Draft.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211007 17:03:51.647" endtime="20211007 17:03:51.774"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:51.629" endtime="20211007 17:03:51.774"/>
-</kw>
-<kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20211007 17:03:51.775" endtime="20211007 17:03:54.534"/>
-</kw>
-<tag>regression</tag>
-<status status="PASS" starttime="20211007 17:03:30.373" endtime="20211007 17:03:54.535"/>
-</test>
-<test id="s1-t3" name="Send Drart LOA Other With Final Approver Only">
-<kw name="Login In Successful" library="Creator_Keywords">
-<arg>prapawit_b</arg>
-<arg>1234</arg>
-<kw name="Open Browser" library="Selenium2Library">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211007 17:03:54.541" level="INFO">Opening browser 'chrome' to base url 'http://qa-smartflow.benchachinda.co.th/accounts/login'.</msg>
-<status status="PASS" starttime="20211007 17:03:54.540" endtime="20211007 17:04:02.284"/>
-</kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211007 17:04:02.284" endtime="20211007 17:04:02.421"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='SIGN IN']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:02.421" endtime="20211007 17:04:02.461"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@placeholder='Enter Username']</arg>
-<arg>${login}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:02.462" level="INFO">Typing text 'prapawit_b' into text field 'xpath=//input[@placeholder='Enter Username']'.</msg>
-<status status="PASS" starttime="20211007 17:04:02.461" endtime="20211007 17:04:02.592"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//input[@placeholder='Enter Password']</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:02.592" level="INFO">Typing text '1234' into text field 'xpath=//input[@placeholder='Enter Password']'.</msg>
-<status status="PASS" starttime="20211007 17:04:02.592" endtime="20211007 17:04:02.667"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='SIGN IN']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:02.667" level="INFO">Clicking button 'xpath=//button[normalize-space()='SIGN IN']'.</msg>
-<status status="PASS" starttime="20211007 17:04:02.667" endtime="20211007 17:04:02.738"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[@class='btn btn-verified-and-continue']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:02.738" endtime="20211007 17:04:02.998"/>
-</kw>
-<status status="PASS" starttime="20211007 17:03:54.539" endtime="20211007 17:04:02.999"/>
-</kw>
-<kw name="Input The OTP For Second Verification" library="Creator_Keywords">
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:03.000" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:04:03.000" endtime="20211007 17:04:03.101"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:03.101" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:04:03.101" endtime="20211007 17:04:03.171"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:03.172" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:04:03.171" endtime="20211007 17:04:03.241"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:03.241" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:04:03.241" endtime="20211007 17:04:03.310"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:03.310" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:04:03.310" endtime="20211007 17:04:03.387"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]</arg>
-<arg>${OTP}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:03.388" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]'.</msg>
-<status status="PASS" starttime="20211007 17:04:03.387" endtime="20211007 17:04:03.456"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[@class='btn btn-verified-and-continue']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:03.456" level="INFO">Clicking button 'xpath=//button[@class='btn btn-verified-and-continue']'.</msg>
-<status status="PASS" starttime="20211007 17:04:03.456" endtime="20211007 17:04:03.514"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:02.999" endtime="20211007 17:04:03.514"/>
-</kw>
-<kw name="Assert Signature" library="Creator_Keywords">
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${alert}</var>
-<arg>Wait Until Element Is Visible</arg>
-<arg>//div[@class='modal-content']</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>//div[@class='modal-content']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:03.516" endtime="20211007 17:04:03.540"/>
-</kw>
-<msg timestamp="20211007 17:04:03.540" level="INFO">${alert} = True</msg>
-<status status="PASS" starttime="20211007 17:04:03.516" endtime="20211007 17:04:03.540"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${alert}' == 'True'</arg>
-<arg>Close Signature Alert</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Close Signature Alert" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-content']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:03.541" endtime="20211007 17:04:04.175"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='CANCEL']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:04.175" endtime="20211007 17:04:04.197"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='CANCEL']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:04.198" level="INFO">Clicking button 'xpath=//button[normalize-space()='CANCEL']'.</msg>
-<status status="PASS" starttime="20211007 17:04:04.198" endtime="20211007 17:04:04.256"/>
-</kw>
-<kw name="Page Should Not Contain Element" library="Selenium2Library">
-<arg>xpath=//div[@class='modal-content']</arg>
-<arg>30s</arg>
-<doc>Verifies that element ``locator`` is not found on the current page.</doc>
-<msg timestamp="20211007 17:04:04.265" level="INFO">Current page does not contain element 'xpath=//div[@class='modal-content']'.</msg>
-<status status="PASS" starttime="20211007 17:04:04.256" endtime="20211007 17:04:04.265"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:03.541" endtime="20211007 17:04:04.265"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:03.540" endtime="20211007 17:04:04.265"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${alert}' != 'True'</arg>
-<arg>Signature Added</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211007 17:04:04.265" endtime="20211007 17:04:04.265"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:03.515" endtime="20211007 17:04:04.265"/>
-</kw>
-<kw name="Select Draft Tab" library="Creator_Keywords">
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//a[normalize-space()='DRAFT']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:04.267" level="INFO">Clicking element 'xpath=//a[normalize-space()='DRAFT']'.</msg>
-<status status="PASS" starttime="20211007 17:04:04.267" endtime="20211007 17:04:04.349"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>id:DataTableDraft</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:04.349" endtime="20211007 17:04:05.533"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:04.266" endtime="20211007 17:04:05.533"/>
-</kw>
-<kw name="Click Edit Icon" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[@title='Edit Document']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:05.535" endtime="20211007 17:04:05.558"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[@title='Edit Document']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:05.558" level="INFO">Clicking button 'xpath=//button[@title='Edit Document']'.</msg>
-<status status="PASS" starttime="20211007 17:04:05.558" endtime="20211007 17:04:05.694"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:05.534" endtime="20211007 17:04:05.695"/>
-</kw>
-<kw name="Send Document" library="Creator_Keywords">
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20211007 17:04:05.697" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<status status="PASS" starttime="20211007 17:04:05.696" endtime="20211007 17:04:05.717"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Send']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:05.717" endtime="20211007 17:04:06.240"/>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Send']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:06.241" level="INFO">Clicking button 'xpath=//button[normalize-space()='Send']'.</msg>
-<status status="PASS" starttime="20211007 17:04:06.240" endtime="20211007 17:04:06.332"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:05.695" endtime="20211007 17:04:06.332"/>
-</kw>
-<kw name="Back To HomePage" library="Creator_Keywords">
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211007 17:04:11.346" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211007 17:04:06.333" endtime="20211007 17:04:11.346"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//img[@src='assets/images/logo.png']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:11.347" level="INFO">Clicking element 'xpath=//img[@src='assets/images/logo.png']'.</msg>
-<status status="PASS" starttime="20211007 17:04:11.347" endtime="20211007 17:04:11.443"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//button[normalize-space()='Create Document']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:11.443" endtime="20211007 17:04:11.470"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:06.333" endtime="20211007 17:04:11.471"/>
-</kw>
-<kw name="Select My Document Tab" library="Creator_Keywords">
-<kw name="Click Element" library="Selenium2Library">
-<arg>xpath=//a[normalize-space()='MY DOCUMENT']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211007 17:04:11.473" level="INFO">Clicking element 'xpath=//a[normalize-space()='MY DOCUMENT']'.</msg>
-<status status="PASS" starttime="20211007 17:04:11.472" endtime="20211007 17:04:11.527"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>xpath=//div[@class='card-body card-table-body']</arg>
-<arg>30s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:11.527" endtime="20211007 17:04:11.549"/>
-</kw>
-<status status="PASS" starttime="20211007 17:04:11.472" endtime="20211007 17:04:11.549"/>
-</kw>
-<kw name="Assert Send Document" library="Creator_Keywords">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>id:DataTableDocument</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211007 17:04:11.550" endtime="20211007 17:04:12.674"/>
+<status status="PASS" starttime="20211011 15:11:11.460" endtime="20211011 15:11:11.747"/>
 </kw>
 <kw name="Scroll Element Into View" library="Selenium2Library">
-<arg>id:DataTableDocument</arg>
+<arg>xpath=//button[normalize-space()='Approve']</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20211007 17:04:12.674" endtime="20211007 17:04:12.959"/>
+<status status="PASS" starttime="20211011 15:11:11.747" endtime="20211011 15:11:12.042"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>xpath=//button[normalize-space()='Approve']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211011 15:11:12.042" level="INFO">Clicking button 'xpath=//button[normalize-space()='Approve']'.</msg>
+<status status="PASS" starttime="20211011 15:11:12.042" endtime="20211011 15:11:12.116"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>8s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211011 15:11:20.121" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20211011 15:11:12.116" endtime="20211011 15:11:20.121"/>
+</kw>
+<status status="PASS" starttime="20211011 15:11:11.366" endtime="20211011 15:11:20.121"/>
+</iter>
+<status status="PASS" starttime="20211011 15:11:02.200" endtime="20211011 15:11:20.121"/>
+</for>
+<status status="PASS" starttime="20211011 15:11:02.169" endtime="20211011 15:11:20.122"/>
+</kw>
+<kw name="Assert No Remain Documents" library="Approver_Keywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>xpath=//td[@class='dataTables_empty']</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211011 15:11:20.124" endtime="20211011 15:11:20.173"/>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
-<arg>xpath=//td[@title='Subject-${currentdate}-EDIT_${ref}']</arg>
+<arg>xpath=//td[@class='dataTables_empty']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20211007 17:04:12.968" level="INFO">Current page contains element 'xpath=//td[@title='Subject-20211007-EDIT_ZEGKW']'.</msg>
-<status status="PASS" starttime="20211007 17:04:12.959" endtime="20211007 17:04:12.968"/>
+<msg timestamp="20211011 15:11:20.190" level="INFO">Current page contains element 'xpath=//td[@class='dataTables_empty']'.</msg>
+<status status="PASS" starttime="20211011 15:11:20.174" endtime="20211011 15:11:20.190"/>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
-<arg>${PICTUREPATH}/003_Send-Request.png</arg>
+<arg>${PICTUREPATH}/FNAP_Approve-Documents.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211007 17:04:13.162" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Capture_Result/003_Send-Request.png"&gt;&lt;img src="Capture_Result/003_Send-Request.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211007 17:04:12.969" endtime="20211007 17:04:13.162"/>
+<msg timestamp="20211011 15:11:20.348" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Capture_Result/FNAP_Approve-Documents.png"&gt;&lt;img src="Capture_Result/FNAP_Approve-Documents.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211011 15:11:20.190" endtime="20211011 15:11:20.348"/>
 </kw>
-<status status="PASS" starttime="20211007 17:04:11.550" endtime="20211007 17:04:13.162"/>
+<status status="PASS" starttime="20211011 15:11:20.123" endtime="20211011 15:11:20.348"/>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20211007 17:04:13.163" endtime="20211007 17:04:15.918"/>
+<status status="PASS" starttime="20211011 15:11:20.349" endtime="20211011 15:11:23.189"/>
 </kw>
 <tag>regression</tag>
-<status status="PASS" starttime="20211007 17:03:54.538" endtime="20211007 17:04:15.919"/>
+<status status="PASS" starttime="20211011 15:10:45.891" endtime="20211011 15:11:23.190"/>
 </test>
 <kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20211007 17:04:15.924" endtime="20211007 17:04:15.924"/>
+<status status="PASS" starttime="20211011 15:11:23.193" endtime="20211011 15:11:23.193"/>
 </kw>
-<status status="PASS" starttime="20211007 17:03:04.905" endtime="20211007 17:04:15.924"/>
+<status status="PASS" starttime="20211011 15:10:45.514" endtime="20211011 15:11:23.193"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">regression</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Creator">Creator</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Approver">Approver</stat>
 </suite>
 </statistics>
 <errors>

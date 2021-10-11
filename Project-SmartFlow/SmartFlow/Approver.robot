@@ -3,7 +3,7 @@ Library    Selenium2Library
 Library    String
 Suite Setup    Initialize Random Variables
 Library    DateTime
-Resource    ../Keywords/Creator_Keywords.robot
+Resource    ../Keywords/Approver_Keywords.robot
 Suite Teardown    Close All Browsers
 
 *** Test Cases ***
@@ -13,3 +13,5 @@ Approve The Document
     Input The OTP For Second Verification
     Assert Signature
     Approve The Document
+    Assert No Remain Documents
+    [Teardown]    Close All Browsers

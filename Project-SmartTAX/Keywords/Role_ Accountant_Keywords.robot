@@ -830,7 +830,7 @@ Assert Accuracy DocumentType1 For Document Type
            
      END
 
-    Capture Page Screenshot    ${SavedPicturePath}/002AC_Assert-Type-TIV.png
+    Capture Page Screenshot    ${SavedPicturePath}/010AC_Assert-Type-TIV.png
 
 Select Start Date
     Click Element  //div[@class='col-md-4']/div/div[@class='form-label-group']
@@ -889,7 +889,7 @@ Assert Accuracy Have Data For Document Date
             END   
            
     END
-    Capture Page Screenshot    ${SavedPicturePath}/003AC_Assert-Document-Date.png
+    Capture Page Screenshot    ${SavedPicturePath}/011AC_Assert-Document-Date.png
 
 Input Document Number
     ${data}=    read_tiv1_file
@@ -903,7 +903,7 @@ Input Document Number
 Assert Document Number
     ${data}=    read_tiv1_file
     Element Should Contain    xpath=//td[contains(text(),'${data}')]    ${data}
-    Capture Page Screenshot    ${SavedPicturePath}/004AC_Assert-Document-Number.png
+    Capture Page Screenshot    ${SavedPicturePath}/012AC_Assert-Document-Number.png
 
 Click Clear Search Button
     Click Button    xpath=//app-filter-header/div[1]/div[2]/div[1]/button[1]
@@ -913,7 +913,7 @@ Assert Clear Search
     Wait Until Element Is Visible  //div[@class='dv-pagination']/ngb-pagination/ul/li  10s
     ${count} =	Get Element Count  //div[@class='dv-pagination']/ngb-pagination/ul/li
     IF   '${count}' == '9'
-                Capture Page Screenshot    ${SavedPicturePath}/005AC_Assert-Clear_Search.png
+                Capture Page Screenshot    ${SavedPicturePath}/013AC_Assert-Clear_Search.png
                   
     ELSE 
             Wait Until Element Is Visible  //div[@class='box-parent position-relative z-1']/div/p-table/div/div/table/tbody/tr  20s
@@ -950,11 +950,11 @@ Input CC Buyer Email
 
 Assert Send Email Failed
     Wait Until Page Contains    buyer_email cannot be blank
-    Capture Page Screenshot    ${SavedPicturePath}/006AC_Assert-Empty-Buyer-EMail.png
+    Capture Page Screenshot    ${SavedPicturePath}/014AC_Assert-Empty-Buyer-EMail.png
 
 Assert Send Email Completely
     Wait Until Page Contains    email has been successfully sent to the email address
-    Capture Page Screenshot    ${SavedPicturePath}/007AC_Assert-Send-Email.png
+    Capture Page Screenshot    ${SavedPicturePath}/015AC_Assert-Send-Email.png
     Click Button    xpath=//button[contains(text(),'OK')]
     Wait Until Element Is Not Visible    xpath=//body/ngb-modal-window[1]/div[1]/div[1]
 
@@ -968,7 +968,7 @@ Download Single XML File
 
 Assert Download Single XML File
     Wait Until Page Contains    Download complete (All 1 Items)    20s
-    Capture Page Screenshot    ${SavedPicturePath}/008AC_Assert-Single-XML-Complete.png
+    Capture Page Screenshot    ${SavedPicturePath}/016AC_Assert-Single-XML-Complete.png
     Click Button    xpath=//button[contains(text(),'Close')]
 
 Download Single PDF File
@@ -978,7 +978,7 @@ Download Single PDF File
 
 Assert Download Single PDF File
     Wait Until Page Contains    Download complete (All 1 Items)    20s
-    Capture Page Screenshot    ${SavedPicturePath}/009AC_Assert-Single-PDF-Complete.png
+    Capture Page Screenshot    ${SavedPicturePath}/017AC_Assert-Single-PDF-Complete.png
     Click Button    xpath=//button[contains(text(),'Close')]
 
 Select on Current Document
@@ -1006,7 +1006,7 @@ Assert Accuracy Verify Document
                             Click Element    xpath=//tbody[@class='ui-table-tbody']/tr[${i}]/td[11]/p-checkbox
                             Wait Until Element Is Visible    //div[@class='modal-content']
                             Click Button    xpath=//body/ngb-modal-window[1]/div[1]/div[1]/div[3]/div[2]/button[1]
-                            Capture Page Screenshot    ${SavedPicturePath}/010AC_Assert-Selected-Checkbox.png
+                            Capture Page Screenshot    ${SavedPicturePath}/018AC_Assert-Selected-Checkbox.png
                     END
                 END
     ELSE
@@ -1027,7 +1027,7 @@ Assert Accuracy Verify Document
                             Click Element    xpath=//tbody[@class='ui-table-tbody']/tr[${i}]/td[11]/p-checkbox
                             Wait Until Element Is Visible    //div[@class='modal-content']
                             Click Button    xpath=//body/ngb-modal-window[1]/div[1]/div[1]/div[3]/div[2]/button[1]
-                            Capture Page Screenshot    ${SavedPicturePath}/010AC_Assert-Selected-Checkbox.png
+                            Capture Page Screenshot    ${SavedPicturePath}/018AC_Assert-Selected-Checkbox.png
                     END 
                   END
                   

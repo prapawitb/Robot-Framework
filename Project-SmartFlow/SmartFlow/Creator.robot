@@ -58,7 +58,7 @@ Send Drart LOA Other With Final Approver Only
     [Teardown]    Close All Browsers
 
 Create Draft LOA Other With 2 People Final Approvers
-    [Tags]    regression    testfunc
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -75,7 +75,7 @@ Create Draft LOA Other With 2 People Final Approvers
     [Teardown]    Close All Browsers
 
 Edit Draft LOA Other With 2 People Final Approvers
-    [Tags]    regression    testfunc
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -95,7 +95,7 @@ Edit Draft LOA Other With 2 People Final Approvers
     [Teardown]    Close All Browsers
 
 Send Drart LOA Other With 2 People Final Approvers
-    [Tags]    regression    testfunc
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature

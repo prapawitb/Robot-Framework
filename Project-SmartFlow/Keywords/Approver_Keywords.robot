@@ -65,7 +65,12 @@ Approve The Document
         # Wait Until Element Is Visible    xpath=//div[@class='modal-body modal-quick-preview']    30s
         # Scroll Element Into View    xpath=//button[normalize-space()='Approve']
         # Click Button    xpath=//button[normalize-space()='Approve']
-        Click Element    xpath=//p[contains(text(),'Subject-${currentdate}-EDIT_')]
+        Click Element    xpath=//p[contains(text(),'${currentdate}-EDIT_')]
+        Wait Until Element Is Visible    xpath=//div[@class='progress-container']    30s
+        Scroll Element Into View    xpath=//button[normalize-space()='Approve']
+        Click Button    xpath=//button[normalize-space()='Approve']
+        sleep    8s
+        Click Element    xpath=//p[contains(text(),'${currentdate}-EDIT_')]
         Wait Until Element Is Visible    xpath=//div[@class='progress-container']    30s
         Scroll Element Into View    xpath=//button[normalize-space()='Approve']
         Click Button    xpath=//button[normalize-space()='Approve']

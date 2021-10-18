@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20211012 13:14:49.581" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20211015 22:23:08.083" rpa="false" schemaversion="2">
 <suite id="s1" name="Approver" source="D:\Robot Framework\Project-SmartFlow\SmartFlow\Approver.robot">
 <kw name="Initialize Random Variables" library="Approver_Keywords" type="SETUP">
 <kw name="Generate Random String" library="String">
@@ -7,22 +7,22 @@
 <arg>5</arg>
 <arg>0123456789ABCDEFGHIJKLMNLOPQRSTUVWXYZ</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<msg timestamp="20211012 13:14:49.902" level="INFO">${ref} = 6QI1X</msg>
-<status status="PASS" starttime="20211012 13:14:49.902" endtime="20211012 13:14:49.902"/>
+<msg timestamp="20211015 22:23:08.446" level="INFO">${ref} = VU8P9</msg>
+<status status="PASS" starttime="20211015 22:23:08.446" endtime="20211015 22:23:08.446"/>
 </kw>
 <kw name="Get Current Date" library="DateTime">
 <var>${currentdate}</var>
 <arg>result_format=%Y%m%d</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20211012 13:14:49.902" level="INFO">${currentdate} = 20211012</msg>
-<status status="PASS" starttime="20211012 13:14:49.902" endtime="20211012 13:14:49.902"/>
+<msg timestamp="20211015 22:23:08.446" level="INFO">${currentdate} = 20211015</msg>
+<status status="PASS" starttime="20211015 22:23:08.446" endtime="20211015 22:23:08.446"/>
 </kw>
 <kw name="Get Current Date" library="DateTime">
 <var>${date}</var>
 <arg>result_format=%d/%m/%Y</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20211012 13:14:49.903" level="INFO">${date} = 12/10/2021</msg>
-<status status="PASS" starttime="20211012 13:14:49.902" endtime="20211012 13:14:49.903"/>
+<msg timestamp="20211015 22:23:08.447" level="INFO">${date} = 15/10/2021</msg>
+<status status="PASS" starttime="20211015 22:23:08.447" endtime="20211015 22:23:08.447"/>
 </kw>
 <kw name="Add Time To Date" library="DateTime">
 <var>${expdate}</var>
@@ -30,8 +30,8 @@
 <arg>7 days</arg>
 <arg>result_format=%d/%m/%Y</arg>
 <doc>Adds time to date and returns the resulting date.</doc>
-<msg timestamp="20211012 13:14:49.907" level="INFO">${expdate} = 19/10/2021</msg>
-<status status="PASS" starttime="20211012 13:14:49.903" endtime="20211012 13:14:49.907"/>
+<msg timestamp="20211015 22:23:08.451" level="INFO">${expdate} = 22/10/2021</msg>
+<status status="PASS" starttime="20211015 22:23:08.447" endtime="20211015 22:23:08.451"/>
 </kw>
 <kw name="Add Time To Date" library="DateTime">
 <var>${newexpdate}</var>
@@ -39,40 +39,40 @@
 <arg>14 days</arg>
 <arg>result_format=%d/%m/%Y</arg>
 <doc>Adds time to date and returns the resulting date.</doc>
-<msg timestamp="20211012 13:14:49.907" level="INFO">${newexpdate} = 26/10/2021</msg>
-<status status="PASS" starttime="20211012 13:14:49.907" endtime="20211012 13:14:49.907"/>
+<msg timestamp="20211015 22:23:08.452" level="INFO">${newexpdate} = 29/10/2021</msg>
+<status status="PASS" starttime="20211015 22:23:08.451" endtime="20211015 22:23:08.452"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ref}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211012 13:14:49.908" level="INFO">${ref} = 6QI1X</msg>
-<status status="PASS" starttime="20211012 13:14:49.907" endtime="20211012 13:14:49.908"/>
+<msg timestamp="20211015 22:23:08.452" level="INFO">${ref} = VU8P9</msg>
+<status status="PASS" starttime="20211015 22:23:08.452" endtime="20211015 22:23:08.452"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${currentdate}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211012 13:14:49.908" level="INFO">${currentdate} = 20211012</msg>
-<status status="PASS" starttime="20211012 13:14:49.908" endtime="20211012 13:14:49.908"/>
+<msg timestamp="20211015 22:23:08.453" level="INFO">${currentdate} = 20211015</msg>
+<status status="PASS" starttime="20211015 22:23:08.452" endtime="20211015 22:23:08.453"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${date}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211012 13:14:49.909" level="INFO">${date} = 12/10/2021</msg>
-<status status="PASS" starttime="20211012 13:14:49.908" endtime="20211012 13:14:49.909"/>
+<msg timestamp="20211015 22:23:08.453" level="INFO">${date} = 15/10/2021</msg>
+<status status="PASS" starttime="20211015 22:23:08.453" endtime="20211015 22:23:08.453"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${expdate}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211012 13:14:49.909" level="INFO">${expdate} = 19/10/2021</msg>
-<status status="PASS" starttime="20211012 13:14:49.909" endtime="20211012 13:14:49.909"/>
+<msg timestamp="20211015 22:23:08.454" level="INFO">${expdate} = 22/10/2021</msg>
+<status status="PASS" starttime="20211015 22:23:08.453" endtime="20211015 22:23:08.454"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${newexpdate}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20211012 13:14:49.909" level="INFO">${newexpdate} = 26/10/2021</msg>
-<status status="PASS" starttime="20211012 13:14:49.909" endtime="20211012 13:14:49.909"/>
+<msg timestamp="20211015 22:23:08.454" level="INFO">${newexpdate} = 29/10/2021</msg>
+<status status="PASS" starttime="20211015 22:23:08.454" endtime="20211015 22:23:08.454"/>
 </kw>
-<status status="PASS" starttime="20211012 13:14:49.901" endtime="20211012 13:14:49.909"/>
+<status status="PASS" starttime="20211015 22:23:08.446" endtime="20211015 22:23:08.454"/>
 </kw>
 <test id="s1-t1" name="Approve The Document">
 <kw name="Login In Successful" library="Approver_Keywords">
@@ -82,96 +82,96 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211012 13:14:49.911" level="INFO">Opening browser 'chrome' to base url 'http://qa-smartflow.benchachinda.co.th/accounts/login'.</msg>
-<status status="PASS" starttime="20211012 13:14:49.911" endtime="20211012 13:14:58.896"/>
+<msg timestamp="20211015 22:23:08.456" level="INFO">Opening browser 'chrome' to base url 'http://qa-smartflow.benchachinda.co.th/accounts/login'.</msg>
+<status status="PASS" starttime="20211015 22:23:08.455" endtime="20211015 22:23:16.972"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211012 13:14:58.896" endtime="20211012 13:14:59.020"/>
+<status status="PASS" starttime="20211015 22:23:16.973" endtime="20211015 22:23:17.101"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>xpath=//button[normalize-space()='SIGN IN']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211012 13:14:59.021" endtime="20211012 13:14:59.067"/>
+<status status="PASS" starttime="20211015 22:23:17.101" endtime="20211015 22:23:17.144"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//input[@placeholder='Enter Username']</arg>
 <arg>${login}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.068" level="INFO">Typing text 'thapagorn_h' into text field 'xpath=//input[@placeholder='Enter Username']'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.067" endtime="20211012 13:14:59.163"/>
+<msg timestamp="20211015 22:23:17.147" level="INFO">Typing text 'thapagorn_h' into text field 'xpath=//input[@placeholder='Enter Username']'.</msg>
+<status status="PASS" starttime="20211015 22:23:17.145" endtime="20211015 22:23:17.247"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//input[@placeholder='Enter Password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.164" level="INFO">Typing text '1234' into text field 'xpath=//input[@placeholder='Enter Password']'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.164" endtime="20211012 13:14:59.252"/>
+<msg timestamp="20211015 22:23:17.248" level="INFO">Typing text '1234' into text field 'xpath=//input[@placeholder='Enter Password']'.</msg>
+<status status="PASS" starttime="20211015 22:23:17.247" endtime="20211015 22:23:17.330"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>xpath=//button[normalize-space()='SIGN IN']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.252" level="INFO">Clicking button 'xpath=//button[normalize-space()='SIGN IN']'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.252" endtime="20211012 13:14:59.327"/>
+<msg timestamp="20211015 22:23:17.330" level="INFO">Clicking button 'xpath=//button[normalize-space()='SIGN IN']'.</msg>
+<status status="PASS" starttime="20211015 22:23:17.330" endtime="20211015 22:23:17.402"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>xpath=//button[@class='btn btn-verified-and-continue']</arg>
 <arg>30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211012 13:14:59.328" endtime="20211012 13:14:59.580"/>
+<status status="PASS" starttime="20211015 22:23:17.402" endtime="20211015 22:23:17.640"/>
 </kw>
-<status status="PASS" starttime="20211012 13:14:49.910" endtime="20211012 13:14:59.580"/>
+<status status="PASS" starttime="20211015 22:23:08.455" endtime="20211015 22:23:17.641"/>
 </kw>
 <kw name="Input The OTP For Second Verification" library="Approver_Keywords">
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.581" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.581" endtime="20211012 13:14:59.666"/>
+<msg timestamp="20211015 22:23:17.642" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[1]//input[1]'.</msg>
+<status status="PASS" starttime="20211015 22:23:17.642" endtime="20211015 22:23:17.730"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.666" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.666" endtime="20211012 13:14:59.733"/>
+<msg timestamp="20211015 22:23:17.730" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[2]//input[1]'.</msg>
+<status status="PASS" starttime="20211015 22:23:17.730" endtime="20211015 22:23:17.801"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.734" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.733" endtime="20211012 13:14:59.802"/>
+<msg timestamp="20211015 22:23:17.801" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[3]//input[1]'.</msg>
+<status status="PASS" starttime="20211015 22:23:17.801" endtime="20211015 22:23:17.875"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.802" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.802" endtime="20211012 13:14:59.867"/>
+<msg timestamp="20211015 22:23:17.875" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[4]//input[1]'.</msg>
+<status status="PASS" starttime="20211015 22:23:17.875" endtime="20211015 22:23:17.945"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.869" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.867" endtime="20211012 13:14:59.935"/>
+<msg timestamp="20211015 22:23:17.945" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[5]//input[1]'.</msg>
+<status status="PASS" starttime="20211015 22:23:17.945" endtime="20211015 22:23:18.014"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]</arg>
 <arg>${OTP}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211012 13:14:59.936" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]'.</msg>
-<status status="PASS" starttime="20211012 13:14:59.935" endtime="20211012 13:15:00.001"/>
+<msg timestamp="20211015 22:23:18.014" level="INFO">Typing text '9' into text field 'xpath=//div[@class='otp-form-wrapper justify-content-around']//div[6]//input[1]'.</msg>
+<status status="PASS" starttime="20211015 22:23:18.014" endtime="20211015 22:23:18.081"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>xpath=//button[@class='btn btn-verified-and-continue']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211012 13:15:00.001" level="INFO">Clicking button 'xpath=//button[@class='btn btn-verified-and-continue']'.</msg>
-<status status="PASS" starttime="20211012 13:15:00.001" endtime="20211012 13:15:00.064"/>
+<msg timestamp="20211015 22:23:18.082" level="INFO">Clicking button 'xpath=//button[@class='btn btn-verified-and-continue']'.</msg>
+<status status="PASS" starttime="20211015 22:23:18.082" endtime="20211015 22:23:18.142"/>
 </kw>
-<status status="PASS" starttime="20211012 13:14:59.581" endtime="20211012 13:15:00.065"/>
+<status status="PASS" starttime="20211015 22:23:17.641" endtime="20211015 22:23:18.142"/>
 </kw>
 <kw name="Assert Signature" library="Approver_Keywords">
 <kw name="Run Keyword And Return Status" library="BuiltIn">
@@ -182,23 +182,23 @@
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>//div[@class='modal-content']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20211012 13:15:00.394" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<msg timestamp="20211015 22:23:18.471" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211012 13:15:05.238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211012 13:15:05.098" endtime="20211012 13:15:05.238"/>
+<msg timestamp="20211015 22:23:23.337" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211015 22:23:23.181" endtime="20211015 22:23:23.337"/>
 </kw>
-<msg timestamp="20211012 13:15:05.242" level="FAIL">Element '//div[@class='modal-content']' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20211012 13:15:00.066" endtime="20211012 13:15:05.242"/>
+<msg timestamp="20211015 22:23:23.355" level="FAIL">Element '//div[@class='modal-content']' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20211015 22:23:18.143" endtime="20211015 22:23:23.355"/>
 </kw>
-<msg timestamp="20211012 13:15:05.242" level="INFO">${alert} = False</msg>
-<status status="PASS" starttime="20211012 13:15:00.066" endtime="20211012 13:15:05.242"/>
+<msg timestamp="20211015 22:23:23.355" level="INFO">${alert} = False</msg>
+<status status="PASS" starttime="20211015 22:23:18.143" endtime="20211015 22:23:23.355"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${alert}' == 'True'</arg>
 <arg>Close Signature Alert</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211012 13:15:05.242" endtime="20211012 13:15:05.242"/>
+<status status="PASS" starttime="20211015 22:23:23.355" endtime="20211015 22:23:23.356"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${alert}' != 'True'</arg>
@@ -209,69 +209,69 @@
 <var>${accountname}</var>
 <arg>//span[@class='font-weight-bold mb-2']</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211012 13:15:05.266" level="INFO">${accountname} = Thapagorn</msg>
-<status status="PASS" starttime="20211012 13:15:05.243" endtime="20211012 13:15:05.266"/>
+<msg timestamp="20211015 22:23:23.422" level="INFO">${accountname} = Thapagorn</msg>
+<status status="PASS" starttime="20211015 22:23:23.357" endtime="20211015 22:23:23.422"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${accountname}</arg>
 <arg>Thapagorn</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20211012 13:15:05.266" endtime="20211012 13:15:05.266"/>
+<status status="PASS" starttime="20211015 22:23:23.423" endtime="20211015 22:23:23.423"/>
 </kw>
-<status status="PASS" starttime="20211012 13:15:05.243" endtime="20211012 13:15:05.266"/>
+<status status="PASS" starttime="20211015 22:23:23.356" endtime="20211015 22:23:23.423"/>
 </kw>
-<status status="PASS" starttime="20211012 13:15:05.242" endtime="20211012 13:15:05.266"/>
+<status status="PASS" starttime="20211015 22:23:23.356" endtime="20211015 22:23:23.423"/>
 </kw>
-<status status="PASS" starttime="20211012 13:15:00.065" endtime="20211012 13:15:05.266"/>
+<status status="PASS" starttime="20211015 22:23:18.143" endtime="20211015 22:23:23.423"/>
 </kw>
 <kw name="Approve The Document" library="Approver_Keywords">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>id:DataTableWaitingForMyApproval</arg>
 <arg>30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211012 13:15:05.267" endtime="20211012 13:15:05.288"/>
+<status status="PASS" starttime="20211015 22:23:23.424" endtime="20211015 22:23:23.441"/>
 </kw>
 <kw name="Get Element Count" library="Selenium2Library">
 <var>${count}</var>
 <arg>//p[contains(text(),'Subject-${currentdate}-EDIT_')]</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20211012 13:15:05.297" level="INFO">${count} = 0</msg>
-<status status="PASS" starttime="20211012 13:15:05.288" endtime="20211012 13:15:05.297"/>
+<msg timestamp="20211015 22:23:23.450" level="INFO">${count} = 0</msg>
+<status status="PASS" starttime="20211015 22:23:23.441" endtime="20211015 22:23:23.450"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
 <value>${count}</value>
-<status status="PASS" starttime="20211012 13:15:05.297" endtime="20211012 13:15:05.297"/>
+<status status="PASS" starttime="20211015 22:23:23.450" endtime="20211015 22:23:23.450"/>
 </for>
-<status status="PASS" starttime="20211012 13:15:05.267" endtime="20211012 13:15:05.298"/>
+<status status="PASS" starttime="20211015 22:23:23.424" endtime="20211015 22:23:23.450"/>
 </kw>
 <kw name="Assert No Remain Documents" library="Approver_Keywords">
 <kw name="Page Should Not Contain Element" library="Selenium2Library">
 <arg>xpath=//p[contains(text(),'Subject-${currentdate}-EDIT_')]</arg>
 <doc>Verifies that element ``locator`` is not found on the current page.</doc>
-<msg timestamp="20211012 13:15:05.304" level="INFO">Current page does not contain element 'xpath=//p[contains(text(),'Subject-20211012-EDIT_')]'.</msg>
-<status status="PASS" starttime="20211012 13:15:05.298" endtime="20211012 13:15:05.304"/>
+<msg timestamp="20211015 22:23:23.457" level="INFO">Current page does not contain element 'xpath=//p[contains(text(),'Subject-20211015-EDIT_')]'.</msg>
+<status status="PASS" starttime="20211015 22:23:23.451" endtime="20211015 22:23:23.457"/>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <arg>${PICTUREPATH}/FNAP_Approve-Documents.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211012 13:15:05.444" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Capture_Result/FNAP_Approve-Documents.png"&gt;&lt;img src="Capture_Result/FNAP_Approve-Documents.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211012 13:15:05.304" endtime="20211012 13:15:05.445"/>
+<msg timestamp="20211015 22:23:23.595" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Capture_Result/FNAP_Approve-Documents.png"&gt;&lt;img src="Capture_Result/FNAP_Approve-Documents.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211015 22:23:23.457" endtime="20211015 22:23:23.595"/>
 </kw>
-<status status="PASS" starttime="20211012 13:15:05.298" endtime="20211012 13:15:05.445"/>
+<status status="PASS" starttime="20211015 22:23:23.451" endtime="20211015 22:23:23.596"/>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20211012 13:15:05.446" endtime="20211012 13:15:08.345"/>
+<status status="PASS" starttime="20211015 22:23:23.596" endtime="20211015 22:23:26.356"/>
 </kw>
 <tag>regression</tag>
-<status status="PASS" starttime="20211012 13:14:49.910" endtime="20211012 13:15:08.347"/>
+<status status="PASS" starttime="20211015 22:23:08.454" endtime="20211015 22:23:26.357"/>
 </test>
 <kw name="Close All Browsers" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20211012 13:15:08.353" endtime="20211012 13:15:08.354"/>
+<status status="PASS" starttime="20211015 22:23:26.365" endtime="20211015 22:23:26.367"/>
 </kw>
-<status status="PASS" starttime="20211012 13:14:49.589" endtime="20211012 13:15:08.354"/>
+<status status="PASS" starttime="20211015 22:23:08.110" endtime="20211015 22:23:26.367"/>
 </suite>
 <statistics>
 <total>

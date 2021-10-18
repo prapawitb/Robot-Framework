@@ -44,19 +44,6 @@ Edit Draft LOA Other With Final Approver Only
     Assert Edit Draft Document
     [Teardown]    Close All Browsers
 
-Send Drart LOA Other With Final Approver Only
-    [Tags]    regression
-    Login In Successful    prapawit_b    1234
-    Input The OTP For Second Verification
-    Assert Signature
-    Select Draft Tab
-    Click Edit Icon
-    Send Document
-    Back To HomePage
-    Select My Document Tab
-    Assert Send The Document
-    [Teardown]    Close All Browsers
-
 Create Draft LOA Other With 2 People Final Approvers
     [Tags]    regression
     Login In Successful    prapawit_b    1234
@@ -94,13 +81,49 @@ Edit Draft LOA Other With 2 People Final Approvers
     Assert Edit Draft Document With 2 Approvers
     [Teardown]    Close All Browsers
 
-Send Drart LOA Other With 2 People Final Approvers
+Create Draft LOA Other With 3 People Final Approvers
+    [Tags]    regression
+    Login In Successful    prapawit_b    1234
+    Input The OTP For Second Verification
+    Assert Signature
+    Select To Create Memo Template
+    Fill The Infomation With 3 Final Approver    Subject3A-${currentdate}-${ref}    ${ref}    ฐาปกรณ์ หาญรักษ์    ดารินทร์ พงศ์สุพัฒน์    ปกาสิต วัฒนา    ${expdate}
+    Assert First Verification With 3 Approvers But Without Via
+    Click Preview Button
+    Assert Preview With 3 Approvers But Without Via
+    Exit The Preview Page
+    Save All Information
+    Back To HomePage
+    Select Draft Tab
+    Assert Draft Document With 3 Approvers
+    [Teardown]    Close All Browsers
+
+Edit Draft LOA Other With 3 People Final Approvers
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
     Select Draft Tab
     Click Edit Icon
+    Assert Draft Verification With 3 Approvers But Without Via
+    Click Edit Button
+    Edit Document After Draft    Subject3A-${currentdate}-EDIT_${ref}    EDIT_${ref}    ${newexpdate}
+    Assert Edit Draft Verification With 3 Approvers But Without Via
+    Click Preview Button
+    Assert Edit Preview With 3 Approvers But Without Via
+    Exit The Preview Page
+    Save All Information
+    Back To HomePage
+    Select Draft Tab
+    Assert Edit Draft Document With 3 Approvers
+    [Teardown]    Close All Browsers
+
+Send Drart LOA Other
+    [Tags]    regression     testfunc
+    Login In Successful    prapawit_b    1234
+    Input The OTP For Second Verification
+    Assert Signature
+    Select Draft Tab
     Send Document
     Back To HomePage
     Select My Document Tab

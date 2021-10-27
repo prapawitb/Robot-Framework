@@ -1957,19 +1957,24 @@ Send Document
 Assert Send The Document
     Wait Until Element Is Visible    id:DataTableDocument
     Scroll Element Into View    id:DataTableDocument
-    Page Should Contain Element    xpath=//td[@title='1FA_NOVIA-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='1FA_NOVIA_CR-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='1FA_VIA-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='1FA_VIA_CR-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='2FA_NOVIA-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='2FA_NOVIA_CR-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='2FA_VIA-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='2FA_VIA_CR-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='3FA_NOVIA-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='3FA_NOVIA_CR-${currentdate}-EDIT_${ref}']
-    Page Should Contain Element    xpath=//td[@title='3FA_VIA-${currentdate}-EDIT_${ref}']
     Page Should Contain Element    xpath=//td[@title='3FA_VIA_CR-${currentdate}-EDIT_${ref}']
-    Capture Page Screenshot    ${PICTUREPATH}/${TEST NAME}.png
+    Page Should Contain Element    xpath=//td[@title='3FA_VIA-${currentdate}-EDIT_${ref}']
+    Page Should Contain Element    xpath=//td[@title='3FA_NOVIA_CR-${currentdate}-EDIT_${ref}']
+    Page Should Contain Element    xpath=//td[@title='3FA_NOVIA-${currentdate}-EDIT_${ref}']
+    Page Should Contain Element    xpath=//td[@title='2FA_VIA_CR-${currentdate}-EDIT_${ref}']
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Capture Page Screenshot    ${PICTUREPATH}/${TEST NAME}_Page1.png
+    Click Element  //a[text()=2]
+    Page Should Contain Element    xpath=//td[@title='2FA_VIA-${currentdate}-EDIT_${ref}']
+    Page Should Contain Element    xpath=//td[@title='2FA_NOVIA_CR-${currentdate}-EDIT_${ref}']
+    Page Should Contain Element    xpath=//td[@title='2FA_NOVIA-${currentdate}-EDIT_${ref}']
+    Page Should Contain Element    xpath=//td[@title='1FA_VIA_CR-${currentdate}-EDIT_${ref}']
+    Page Should Contain Element    xpath=//td[@title='1FA_VIA-${currentdate}-EDIT_${ref}']
+    Capture Page Screenshot    ${PICTUREPATH}/${TEST NAME}_Page2.png
+    Click Element  //a[text()=3]
+    Page Should Contain Element    xpath=//td[@title='1FA_NOVIA_CR-${currentdate}-EDIT_${ref}']
+    Page Should Contain Element    xpath=//td[@title='1FA_NOVIA-${currentdate}-EDIT_${ref}']
+    Capture Page Screenshot    ${PICTUREPATH}/${TEST NAME}_Page3.png
 
 Search Document Name
     [arguments]    ${searchdocument}

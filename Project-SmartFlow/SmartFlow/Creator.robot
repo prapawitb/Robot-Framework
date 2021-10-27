@@ -468,6 +468,6 @@ Suite Teardown    Close All Browsers
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
-    Search Document Name    Subject3A-${currentdate}-EDIT_${ref}
+    Search Document Name    3FA_VIA_CR-${currentdate}-EDIT_${ref}
     Assert Search Document Name
     [Teardown]    Close All Browsers

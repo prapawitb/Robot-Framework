@@ -7,8 +7,8 @@ Resource    ../Keywords/Creator_Keywords.robot
 Suite Teardown    Close All Browsers
 
 *** Test Cases ***
-[SF001] Create Draft LOA Type Other With Final Approver
-    [Tags]    regression
+[SF_C001] Create Draft LOA Type Other With Final Approver
+    [Tags]    regression    testfunc
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -24,8 +24,8 @@ Suite Teardown    Close All Browsers
     Assert Draft Document Without Via
     [Teardown]    Close All Browsers
 
-[SF002] Edit Draft LOA Type Other With Final Approver
-    [Tags]    regression
+[SF_C002] Edit Draft LOA Type Other With Final Approver
+    [Tags]    regression    testfunc
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -44,7 +44,7 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document Without Via
     [Teardown]    Close All Browsers
 
-[SF003] Create Draft LOA Type Other With Final Approver - Change Requester
+[SF_C003] Create Draft LOA Type Other With Final Approver - Change Requester
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -61,7 +61,7 @@ Suite Teardown    Close All Browsers
     Assert Draft Document Without Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF004] Edit Draft LOA Type Other With Final Approver - Change Requester
+[SF_C004] Edit Draft LOA Type Other With Final Approver - Change Requester
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -81,7 +81,7 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document Without Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF005] Create Draft LOA Type Other With Final Approver And Via
+[SF_C005] Create Draft LOA Type Other With Final Approver And Via
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -98,7 +98,7 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With Via
     [Teardown]    Close All Browsers
 
-[SF006] Edit Draft LOA Type Other With Final Approver And Via
+[SF_C006] Edit Draft LOA Type Other With Final Approver And Via
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -118,7 +118,7 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With Via
     [Teardown]    Close All Browsers
 
-[SF007] Create Draft LOA Type Other With Final Approver And Via - Change Requester
+[SF_C007] Create Draft LOA Type Other With Final Approver And Via - Change Requester
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -135,7 +135,7 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF008] Edit Draft LOA Type Other With Final Approver And Via - Change Requester
+[SF_C008] Edit Draft LOA Type Other With Final Approver And Via - Change Requester
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -155,7 +155,7 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF009] Create Draft LOA Other With 2 People Final Approvers
+[SF_C009] Create Draft LOA Other With 2 People Final Approvers
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -172,7 +172,7 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With 2 Approvers But Without Via
     [Teardown]    Close All Browsers
 
-[SF010] Edit Draft LOA Other With 2 People Final Approvers
+[SF_C010] Edit Draft LOA Other With 2 People Final Approvers
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -192,7 +192,7 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With 2 Approvers But Without Via 
     [Teardown]    Close All Browsers
 
-[SF011] Create Draft LOA Other With 2 People Final Approvers - Change Requester
+[SF_C011] Create Draft LOA Other With 2 People Final Approvers - Change Requester
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -209,7 +209,7 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With 2 Approvers But Without Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF012] Edit Draft LOA Other With 2 People Final Approvers - Change Requester
+[SF_C012] Edit Draft LOA Other With 2 People Final Approvers - Change Requester
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -229,7 +229,7 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With 2 Approvers But Without Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF013] Create Draft LOA Other With 2 People Final Approvers And Via
+[SF_C013] Create Draft LOA Other With 2 People Final Approvers And Via
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -246,7 +246,7 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With 2 Approvers But And Via
     [Teardown]    Close All Browsers
 
-[SF014] Edit Draft LOA Other With 2 People Final Approvers And Via
+[SF_C014] Edit Draft LOA Other With 2 People Final Approvers And Via
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -266,7 +266,7 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With 2 Approvers And Via
     [Teardown]    Close All Browsers
 
-[SF015] Create Draft LOA Other With 2 People Final Approvers And Via - Change Requester
+[SF_C015] Create Draft LOA Other With 2 People Final Approvers And Via - Change Requester
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -283,7 +283,7 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With 2 Approvers But And Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF016] Edit Draft LOA Other With 2 People Final Approvers And Via - Change Requester
+[SF_C016] Edit Draft LOA Other With 2 People Final Approvers And Via - Change Requester
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
@@ -303,8 +303,8 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With 2 Approvers And Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF017] Create Draft LOA Other With 3 People Final Approvers
-    [Tags]    regression    testfunc
+[SF_C017] Create Draft LOA Other With 3 People Final Approvers
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -320,8 +320,8 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With 3 Approvers But Without Via
     [Teardown]    Close All Browsers
 
-[SF018] Edit Draft LOA Other With 3 People Final Approvers
-    [Tags]    regression    testfunc
+[SF_C018] Edit Draft LOA Other With 3 People Final Approvers
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -340,8 +340,8 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With 3 Approvers
     [Teardown]    Close All Browsers
 
-[SF019] Create Draft LOA Other With 3 People Final Approvers - Change Requester
-    [Tags]    regression    testfunc
+[SF_C019] Create Draft LOA Other With 3 People Final Approvers - Change Requester
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -357,8 +357,8 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With 3 Approvers But Without Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF020] Edit Draft LOA Other With 3 People Final Approvers - Change Requester
-    [Tags]    regression    testfunc
+[SF_C020] Edit Draft LOA Other With 3 People Final Approvers - Change Requester
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -377,8 +377,8 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With 3 Approvers - Change Requester
     [Teardown]    Close All Browsers
 
-[SF021] Create Draft LOA Other With 3 People Final Approvers And Via
-    [Tags]    regression    testfunc
+[SF_C021] Create Draft LOA Other With 3 People Final Approvers And Via
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -394,8 +394,8 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With 3 Approvers And Via
     [Teardown]    Close All Browsers
 
-[SF022] Edit Draft LOA Other With 3 People Final Approvers And Via
-    [Tags]    regression    testfunc
+[SF_C022] Edit Draft LOA Other With 3 People Final Approvers And Via
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -414,8 +414,8 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With 3 Approvers And Via
     [Teardown]    Close All Browsers
 
-[SF023] Create Draft LOA Other With 3 People Final Approvers - Change Requester
-    [Tags]    regression    testfunc
+[SF_C023] Create Draft LOA Other With 3 People Final Approvers - Change Requester
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -431,8 +431,8 @@ Suite Teardown    Close All Browsers
     Assert Draft Document With 3 Approvers And Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF024] Edit Draft LOA Other With 3 People Final Approvers And Via - Change Requester
-    [Tags]    regression    testfunc
+[SF_C024] Edit Draft LOA Other With 3 People Final Approvers And Via - Change Requester
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -451,8 +451,8 @@ Suite Teardown    Close All Browsers
     Assert Edit Draft Document With 3 Approvers And Via - Change Requester
     [Teardown]    Close All Browsers
 
-[SF025] Send Drart LOA Other
-    [Tags]    regression    testfunc
+[SF_C025] Send Drart LOA Other
+    [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification
     Assert Signature
@@ -463,7 +463,7 @@ Suite Teardown    Close All Browsers
     Assert Send The Document
     [Teardown]    Close All Browsers
 
-[SF026] Search Document By Search Box
+[SF_C026] Search Document By Search Box
     [Tags]    regression
     Login In Successful    prapawit_b    1234
     Input The OTP For Second Verification

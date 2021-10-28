@@ -44,6 +44,7 @@ Input The OTP For Second Verification
     Click Button    xpath=//button[@class='btn btn-verified-and-continue']
 
 Assert Signature
+    sleep   3s
     ${alert}  Run Keyword And Return Status  Wait Until Element Is Visible  //div[@class='modal-content']
     Run Keyword If  '${alert}' == 'True'  Close Signature Alert
     Run Keyword If  '${alert}' != 'True'  Signature Added
@@ -56,27 +57,52 @@ Signature Added
     ${accountname}  Get Text    //span[@class='font-weight-bold mb-2']
     Should Contain  ${accountname}  Thapagorn
 
-Approve The Document
+First Approver Return The Document And Assert Return
+    [arguments]    ${reason}
     Wait Until Element Is Visible    id:DataTableWaitingForMyApproval     30s
-    ${count} =	Get Element Count  //p[contains(text(),'Subject-${currentdate}-EDIT_')]
-    FOR    ${i}    IN RANGE    ${count}
-    ${ni}  Evaluate  ${i}+1
-        # Click Element    xpath=//tbody/tr[${1}]/td[10]/button[1]/img[1]
-        # Wait Until Element Is Visible    xpath=//div[@class='modal-body modal-quick-preview']    30s
-        # Scroll Element Into View    xpath=//button[normalize-space()='Approve']
-        # Click Button    xpath=//button[normalize-space()='Approve']
-        Click Element    xpath=//p[contains(text(),'${currentdate}-EDIT_')]
-        Wait Until Element Is Visible    xpath=//div[@class='progress-container']    30s
-        Scroll Element Into View    xpath=//button[normalize-space()='Approve']
-        Click Button    xpath=//button[normalize-space()='Approve']
-        sleep    8s
-        Click Element    xpath=//p[contains(text(),'${currentdate}-EDIT_')]
-        Wait Until Element Is Visible    xpath=//div[@class='progress-container']    30s
-        Scroll Element Into View    xpath=//button[normalize-space()='Approve']
-        Click Button    xpath=//button[normalize-space()='Approve']
-        sleep    8s
+    Double Click Element   xpath=//th[contains(text(),'Doc No.')]
+    ${DocumentName}    Get Text    xpath=//tbody/tr[1]/td[1]/button[1]/p[1]
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Scroll Element Into View    id:DataTableWaitingForMyApproval
+    Wait Until Element Is Visible    xpath=//th[contains(text(),'Doc No.')]    30s
+    Click Element    xpath=//p[contains(text(),'${currentdate}-EDIT_')]
+    Wait Until Element Is Visible    xpath=//div[@class='progress-container']    30s
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    Wait Until Element Is Visible    xpath=//button[normalize-space()='Return']    30s
+    Scroll Element Into View    xpath=//button[normalize-space()='Return']
+    Click Button    xpath=//button[normalize-space()='Return']
+    Wait Until Element Is Visible    xpath=//div[@class='modal-content']    30s
+    Input Text    xpath=//textarea[@placeholder='*Please type the reason']    ${reason}
+    Click Button    xpath=//button[@class='btn btn-return']
+    sleep    6s
+    Double Click Element   xpath=//th[contains(text(),'Doc No.')]
+    Should Not Contain    xpath=//tbody/tr[1]/td[1]/button[1]/p[1]     ${DocumentName}
+    Capture Page Screenshot    ${PICTUREPATH}/${TEST NAME}.png
+
+First Approver Approves The Documents
+    Wait Until Element Is Visible    id:DataTableWaitingForMyApproval     30s
+    Double Click Element   xpath=//th[contains(text(),'Doc No.')]
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    ${countPage} =	Get Element Count  //a[@data-dt-idx]
+    ${countCurrentColumn} =	Get Element Count  //p[contains(text(),'${currentdate}-EDIT_')]
+    ${isVisible}=  Run Keyword And Return Status  Element Should Be Visible  xpath=//p[contains(text(),'${currentdate}-EDIT_')]
+    FOR    ${i}    IN RANGE    ${countPage}
+        FOR    ${j}    IN RANGE    ${countCurrentColumn}
+            Scroll Element Into View    id:DataTableWaitingForMyApproval
+            Wait Until Element Is Visible    xpath=//th[contains(text(),'Doc No.')]    30s
+            Click Element    xpath=//p[contains(text(),'${currentdate}-EDIT_')]
+            Wait Until Element Is Visible    xpath=//div[@class='progress-container']    30s
+            Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+            Wait Until Element Is Visible    xpath=//button[normalize-space()='Approve']    30s
+            Scroll Element Into View    xpath=//button[normalize-space()='Approve']
+            Click Button    xpath=//button[normalize-space()='Approve']
+            sleep    6s
+            Double Click Element   xpath=//th[contains(text(),'Doc No.')]
+            Exit For Loop If  '${isVisible}' == 'False'
+        END
+        Exit For Loop If  '${isVisible}' == 'False'
     END
 
 Assert No Remain Documents
     Page Should Not Contain Element    xpath=//p[contains(text(),'Subject-${currentdate}-EDIT_')]
-    Capture Page Screenshot    ${PICTUREPATH}/FNAP_Approve-Documents.png
+    Capture Page Screenshot    ${PICTUREPATH}/${TEST NAME}.png

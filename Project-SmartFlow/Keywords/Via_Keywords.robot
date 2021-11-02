@@ -55,14 +55,14 @@ Close Signature Alert
     Page Should Not Contain Element    xpath=//div[@class='modal-content']    30s
 Signature Added
     ${accountname}  Get Text    //span[@class='font-weight-bold mb-2']
-    Run Keyword If  '${accountname}' == 'Thapagorn'  Assert Thapagorn Account
-    Run Keyword If  '${accountname}' == 'Darin'  Assert Darin Account
-Assert Thapagorn Account
-    Element Text Should Be  xpath=//span[@class='font-weight-bold mb-2']  Thapagorn
-Assert Darin Account
-    Element Text Should Be  xpath=//span[@class='font-weight-bold mb-2']  Darin
+    Run Keyword If  '${accountname}' == 'Ruchira'  Assert Ruchira Account
+    Run Keyword If  '${accountname}' == 'Yongyut'  Assert Yongyut Account
+Assert Ruchira Account
+    Element Text Should Be  xpath=//span[@class='font-weight-bold mb-2']  Ruchira
+Assert Yongyut Account
+    Element Text Should Be  xpath=//span[@class='font-weight-bold mb-2']  Yongyut
 
-Approver Return The Document And Assert Return
+Via Return The Document And Assert Return
     [arguments]    ${reason}
     Wait Until Element Is Visible    id:DataTableWaitingForMyApproval     30s
     Double Click Element   xpath=//th[contains(text(),'Doc No.')]
@@ -84,12 +84,14 @@ Approver Return The Document And Assert Return
     Should Not Contain    xpath=//tbody/tr[1]/td[1]/button[1]/p[1]     ${DocumentName}
     Capture Page Screenshot    ${PICTUREPATH}/${TEST NAME}.png
 
-Approver Approves The Documents
+Via Approves The Documents
     Wait Until Element Is Visible    id:DataTableWaitingForMyApproval     30s
     Double Click Element   xpath=//th[contains(text(),'Doc No.')]
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     ${countPage} =	Get Element Count  //a[@data-dt-idx]
     ${countCurrentColumn} =	Get Element Count  //p[contains(text(),'${currentdate}-EDIT_')]
-    FOR    ${i}    IN RANGE    ${countPage}
+    # ${isVisible}=  Run Keyword And Return Status  Element Should Be Visible  xpath=//p[contains(text(),'${currentdate}-EDIT_')]
+    FOR    ${i}    IN RANGE    ${countPage}-2
         FOR    ${j}    IN RANGE    ${countCurrentColumn}
             Scroll Element Into View    id:DataTableWaitingForMyApproval
             Wait Until Element Is Visible    xpath=//th[contains(text(),'Doc No.')]    30s
